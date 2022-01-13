@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1">
+      <file name="source.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/source.xml" />
+		</update>
+	</info>
+	<element name="Fanatical's Swordmage" type="Source" source="Core" id="ID_SOURCE_FANATICAL_SWORDMAGE">
+		<description>
+			<![CDATA[<p>Play as a spellsword, an arcane warrior that blends magic with their attacks. Including 10 subclasses, 30+ new spells, alternative class features, and a magic item!</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">FSM</set>
+			<set name="url">https://www.fanaticaldm.com/5e-classes</set>
+      <set name="image">https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/swordmage.png</set>
+			<set name="author" abbreviation="FDM" url="https://www.fanaticaldm.com/">Fanatical DM</set>
+			<set name="third-party">true</set>
+		</setters>
+	</element>
+</elements>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="10.1.1">
+      <file name="swordmage-guardian.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/archetypes/swordmage-guardian.xml" />
+		</update>
+	</info>
+
+	<element name="Guardian" type="Archetype" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_SWORDMAGE_GUARDIAN">
+		<supports>Swordmage Tradition</supports>
+		<description>
+			<p>Swordmages choosing this archetype focus on protecting others from harm through abjuration magic. Guardians normally serve as elite guards for rulers or are wandering swordsmen defending the innocent.</p>
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_ROLE" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_AEGIS" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_AEGIS_SPELLS" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_VIGILANT_GUARDIAN" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_ABJURING_BEACON" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_GUARDIAN_BOND" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_STALWART_PROTECTOR" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_MASS_WARD" />
+		</description>
+		<sheet display="false">
+			<description>Swordmages choosing this archetype focus on protecting others from harm through abjuration magic. Guardians normally serve as elite guards for rulers or are wandering swordsmen defending the innocent.</description>
+		</sheet>
+		<rules>
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_ROLE" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_AEGIS" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_AEGIS_SPELLS" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_VIGILANT_GUARDIAN" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_ABJURING_BEACON" level="7" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_GUARDIAN_BOND" level="11" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_STALWART_PROTECTOR" level="15" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_MASS_WARD" level="20" />
+		</rules>
+	</element>
+
+  <element name="Guardian Role" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_ROLE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_GUARDIAN_ROLE</requirements>
+		<description>
+			<p>Each Guardian chooses to be either a defensive or aggressive protector. Choose one of the following Guardian Roles: Defender or Punisher. The role you choose affects your Aegis and features of this archetype.</p>
+			<p class="indent">You can change your Guardian Role whenever you finish a short or long rest, provided you have your Arcane Weapon in hand.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Archetype Feature" name="Guardian Role" supports="Guardian Role" />
+		</rules>
+	</element>
+	<element name="Defender" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_SWORDMAGE_GUARDIAN_ROLE_DEFENDER">
+		<supports>Guardian Role</supports>
+		<sheet alt="Guardian Role">
+			<description>Defender</description>
+		</sheet>
+	</element>
+	<element name="Punisher" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_SWORDMAGE_GUARDIAN_ROLE_PUNISHER">
+		<supports>Guardian Role</supports>
+		<sheet alt="Guardian Role">
+			<description>Punisher</description>
+		</sheet>
+	</element>
+  <element name="Aegis" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_AEGIS">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_GUARDIAN_AEGIS</requirements>
+    <description>
+      <p>When you take this archetype at 3rd level, you gain the following Aegis option:</p>
+      <p class="indent"><b>Aegis of the Guardian.</b> As a bonus action, you can activate this Aegis and then ward an ally within 30 feet of you that you can see. Depending on your Guardian Role, you gain one of the following reactions:</p>
+			<ul>
+				<li><b>Defender:</b> When you see your warded ally hit by an attack and they are within 30 feet of you, you can use your reaction to create a magical shield surrounding them, and you halve the attack's damage (rounded down) against them.</li>
+				<li><b>Punisher:</b> When you see a creature within 30 feet of you attack your warded ally, you can use your reaction to teleport to an unoccupied space adjacent to the attacker and make one weapon attack against the creature.</li>
+			</ul>
+      <p class="indent">On later turns, you can use a bonus action to change your warded target to another ally within 30 feet of you that you can see. Your Aegis lasts for 1 minute, ending early if you fall unconscious or die.</p>
+    </description>
+    <sheet action="Bonus Action" usage="1/Short rest">
+			<description>You ward an ally within 30 feet of you that you can see. On later turns, you can use a bonus action to change your warded target to another ally within 30 feet of you that you can see. Your Aegis lasts for 1 minute, ending early if you fall unconscious or die.</description>
+		</sheet>
+		<rules action="Reaction">
+			<grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_AEGIS_DEFENDER" requirements="ID_FSM_ARCHETYPE_SWORDMAGE_GUARDIAN_ROLE_DEFENDER" />
+			<grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_AEGIS_PUNISHER" requirements="ID_FSM_ARCHETYPE_SWORDMAGE_GUARDIAN_ROLE_PUNISHER" />
+		</rules>
+  </element>
+	<element name="Aegis of the Guardian: Defender" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_AEGIS_DEFENDER">
+		<sheet>
+			<description>When you see your warded ally hit by an attack and they are within 30 feet of you, you can use your reaction to create a magical shield surrounding them, and you halve the attack's damage (rounded down) against them.</description>
+		</sheet>
+	</element>
+	<element name="Aegis of the Guardian: Punisher" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_AEGIS_PUNISHER">
+		<sheet action="Reaction">
+			<description>When you see a creature within 30 feet of you attack your warded ally, you can use your reaction to teleport to an unoccupied space adjacent to the attacker and make one weapon attack against the creature.</description>
+		</sheet>
+	</element>
+  <element name="Aegis Spells" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_AEGIS_SPELLS">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_GUARDIAN_AEGIS_SPELLS</requirements>
+    <description>
+      <p>You gain aegis spells at the swordmage level listed below.</p>
+      <h5 class="caption">GUARDIAN SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Swordmage Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3st</td><td><em>ensnaring pull</em></td></tr>
+				<tr><td>5rd</td><td><em>warding bond</em></td></tr>
+				<tr><td>9th</td><td><em>dispel magic</em></td></tr>
+				<tr><td>13th</td><td><em>dimensional vortex</em></td></tr>
+				<tr><td>17th</td><td><em>wall of force</em></td></tr>
+			</table>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Spell" id="ID_FSM_SPELL_ENSNARING_PULL" level="3" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_PHB_SPELL_WARDING_BOND" level="5" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_PHB_SPELL_DISPEL_MAGIC" level="9" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_FSM_SPELL_DIMENSIONAL_VORTEX" level="13" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FORCE" level="17" spellcasting="Swordmage" />
+    </rules>
+  </element>
+  <element name="Vigilant Guardian" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_VIGILANT_GUARDIAN">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_GUARDIAN_VIGILANT_GUARDIAN</requirements>
+    <description>
+      <p>At 3rd level, your defensive training emphasizes sturdy protection and constant vigilance. You gain proficiency with heavy armor.</p>
+			<p class="indent">You can also mark an area under your protection. You can cast the alarm spell without expending a spell slot. You can use this feature a number of times equal to your proficiency bonus. When you finish a long rest, you regain all expended uses.</p>
+    </description>
+    <sheet usage="{{proficiency}}/Long Rest">
+			<description>You can cast the alarm spell without expanding a spell slot.</description>
+		</sheet>
+    <rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+      <grant type="Spell" id="ID_PHB_SPELL_ALARM" />
+    </rules>
+  </element>
+  <element name="Abjuring Beacon" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_ABJURING_BEACON">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_GUARDIAN_ABJURING_BEACON</requirements>
+    <description>
+      <p>Starting at 7th level, as an action, you can create a 10-foot radius beacon of abjuration magic within 30 feet of you that lasts for 1 minute. You can move the beacon 30 feet as a bonus action on your turn. The beacon has one of the following effects depending on your Guardian Role:</p>
+			<ul>
+				<li><b>Defender:</b> You and any friendly creatures within the beacon's area gain a +2 bonus to their AC and saving throws. When you reach 15th level of this class, the bonus increases to +3.</li>
+				<li><b>Punisher:</b> If a creature hits you or a friendly creature with an attack while the attacked creature is within the beacon's area, the attacked creature can use their reaction to make the attacker take force damage. The damage taken equals half of the attack's damage (rounded down).</li>
+			</ul>
+      <p class="indent">Once you use this feature, you can't use it again until after a short or long rest.</p>
+    </description>
+    <sheet action="Action" usage="1/Short Rest">
+      <description>You can create a 10-foot radius beacon of abjuration magic within 30 feet of you that lasts for 1 minute. You can move the beacon 30 feet as a bonus action on your turn.</description>
+    </sheet>
+    <rules>
+			<grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_ABJURING_BEACON_DEFENDER" requirements="ID_FSM_ARCHETYPE_SWORDMAGE_GUARDIAN_ROLE_DEFENDER" />
+			<grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_ABJURING_BEACON_PUNISHER" requirements="ID_FSM_ARCHETYPE_SWORDMAGE_GUARDIAN_ROLE_PUNISHER" />
+    </rules>
+  </element>
+	<element name="Abjuring Beacon: Defender" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_ABJURING_BEACON_DEFENDER">
+		<sheet>
+			<description>You and any friendly creatures within the beacon's area gain a +{{guardian beacon:defender:bonus}} bonus to their AC and saving throws.</description>
+		</sheet>
+		<rules>
+			<stat name="guardian beacon:defender:bonus" value="2" />
+			<stat name="guardian beacon:defender:bonus" value="1" level="15" />
+		</rules>
+	</element>
+	<element name="Abjuring Beacon: Punisher" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_ABJURING_BEACON_PUNISHER">
+		<sheet action="Reaction">
+			<description>If a creature hits you or a friendly creature with an attack while the attacked creature is within the beacon's area, the attacked creature can use their reaction to make the attacker take force damage. The damage taken equals half of the attack's damage (rounded down).</description>
+		</sheet>
+	</element>
+  <element name="Guardian Bond" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_GUARDIAN_BOND">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_GUARDIAN_GUARDIAN_BOND</requirements>
+    <description>
+      <p>When you reach 11th level, you learn a ritual to magically bind yourself to another person to better protect them. You perform the ritual over the course of 1 hour, which can be done during a short rest. The person must be within your reach throughout the ritual, and must be willing. After the ritual is concluded, you can sense the location of the chosen person as long as they are on the same plane of existence as you. You can sense when the person is damaged, affected by a hostile magical effect, or killed.</p>
+			<p class="indent">As a bonus action, you can teleport to an unoccupied space adjacent to your bound person as long as they are on the same plane of existence as you. Teleporting in this way consumes the magic of the bond, ending the connection between the two of you.</p>
+			<p class="indent">If you attempt to bond with another person, you must break your current bond.</p>
+    </description>
+    <sheet>
+      <description>You can bind yourself to another person over 1 hour (short rest). You can sense their location as long as they are on the same plane of existence as you. You can sense when they are damaged, affected by a hostile magical effect, or killed. As a bonus action, you can teleport to an unoccupied space adjacent to your bound person as long as they are on the same plane of existence as you, breakingg the bond.</description>
+    </sheet>
+  </element>
+  <element name="Stalwart Protector" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_STALWART_PROTECTOR">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_GUARDIAN_STALWART_PROTECTOR</requirements>
+    <description>
+      <p>At 15th level, your Aegis grows in strength, and your Aegis gains a benefit depending on your Guardian Role:</p>
+			<ul>
+				<li><b>Defender:</b> When you use your Aegis reaction, you can choose to teleport your warded ally up to 30 feet to an unoccupied space that you can see. The teleportation fails if your warded ally is unwilling to teleport.</li>
+				<li><b>Punisher:</b> When you use your Aegis reaction, you can cast a cantrip in place of making a weapon attack.</li>
+			</ul>
+    </description>
+    <sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_STALWART_PROTECTOR_DEFENDER" requirements="ID_FSM_ARCHETYPE_SWORDMAGE_GUARDIAN_ROLE_DEFENDER" />
+			<grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_STALWART_PROTECTOR_PUNISHER" requirements="ID_FSM_ARCHETYPE_SWORDMAGE_GUARDIAN_ROLE_PUNISHER" />
+		</rules>
+  </element>
+	<element name="Stalwart Protector: Defender" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_STALWART_PROTECTOR_DEFENDER">
+		<sheet>
+			<description>When you use your Aegis reaction, you can choose to teleport your warded ally up to 30 feet to an unoccupied space that you can see. The teleportation fails if your warded ally is unwilling to teleport.</description>
+		</sheet>
+	</element>
+	<element name="Stalwart Protector: Punisher" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_STALWART_PROTECTOR_PUNISHER">
+		<sheet>
+			<description>When you use your Aegis reaction, you can cast a cantrip in place of making a weapon attack.</description>
+		</sheet>
+	</element>
+  <element name="Mass Ward" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_GUARDIAN_MASS_WARD">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_GUARDIAN_MASS_WARD</requirements>
+    <description>
+      <p>When you reach 20th level, as a bonus action or as part of your bonus action to activate your Aegis, you can create powerful magical shields around you and a number of allies up to your Intelligence modifier (a minimum of 1). All shielded creatures gain temporary hit points equal to 20 plus your Intelligence modifier (a minimum of 1).</p>
+			<p class="indent">If a creature damages a shielded creature while the shielded creature has these temporary hit points, the attacking creature takes force damage equal to the total temporary hit points gained.</p>
+			<p class="indent">Once you use this feature, you can't use it again until after a long rest.</p>
+    </description>
+    <sheet action="Bonus Action (Aegis)" usage="1/Long Rest">
+      <description>You and {{guardian:mass ward:count}} allies gain {{guardian:mass ward:temphp}} temporary hit points. If a creature damages a shielded creature while the shielded creature has these temporary hit points, the attacking creature takes {{guardian:mass ward:temphp}} force damage.</description>
+    </sheet>
+		<rules>
+			<stat name="guardian:mass ward:count" value="1" bonus="bonus" />
+			<stat name="guardian:mass ward:count" value="intelligence:modifier" bonus="bonus" />
+			<stat name="guardian:mass ward:temphp" value="1" bonus="bonus" />
+			<stat name="guardian:mass ward:temphp" value="intelligence:modifier" bonus="bonus" />
+			<stat name="guardian:mass ward:temphp" value="20" />
+		</rules>
+  </element>
+
+	<element name="Guardian Role Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_GUARDIAN_ROLE" />
+	<element name="Aegis Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_GUARDIAN_AEGIS" />
+  <element name="Aegis Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_GUARDIAN_AEGIS_SPELLS" />
+  <element name="Vigilant Guardian Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_GUARDIAN_VIGILANT_GUARDIAN" />
+  <element name="Abjuring Beacon Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_GUARDIAN_ABJURING_BEACON" />
+  <element name="Guardian Bond Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_GUARDIAN_GUARDIAN_BOND" />
+  <element name="Stalwart Protector Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_GUARDIAN_STALWART_PROTECTOR" />
+  <element name="Mass Ward Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_GUARDIAN_MASS_WARD" />
+
+</elements>

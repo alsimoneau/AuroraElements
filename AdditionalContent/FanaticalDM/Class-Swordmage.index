@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+  <info>
+    <update version="1.2">
+      <file name="Class-Swordmage.index" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage.index" />
+    </update>
+  </info>
+  <files>
+    <file name="source.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/source.xml" />
+    <file name="class-swordmage.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/class-swordmage.xml" />
+    <file name="spells.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/spells.xml" />
+    <file name="feats.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/feats.xml" />
+    <file name="items.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/items.xml" />
+
+    <!-- archetypes -->
+    <file name="swordmage-blade-summoner.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/archetypes/swordmage-blade-summoner.xml" />
+    <file name="swordmage-chronomancer.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/archetypes/swordmage-chronomancer.xml" />
+    <file name="swordmage-crimson-knight.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/archetypes/swordmage-crimson-knight.xml" />
+    <file name="swordmage-duplicitist.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/archetypes/swordmage-duplicitist.xml" />
+    <file name="swordmage-eldritch-sniper.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/archetypes/swordmage-eldritch-sniper.xml" />
+    <file name="swordmage-elementalist.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/archetypes/swordmage-elementalist.xml" />
+    <file name="swordmage-guardian.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/archetypes/swordmage-guardian.xml" />
+    <file name="swordmage-inquisitor.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/archetypes/swordmage-inquisitor.xml" />
+    <file name="swordmage-meteor-knight.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/archetypes/swordmage-meteor-knight.xml" />
+    <file name="swordmage-swordscholar.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/archetypes/swordmage-swordscholar.xml" />
+
+  </files>
+</index>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="10.1.1">
+      <file name="swordmage-items.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/swordmage-items.xml" />
+		</update>
+	</info>
+
+	<element name="Spellblade +1" type="Magic Item" source="Fanatical's Swordmage" id="ID_FSM_MAGIC_ITEM_SPELLBLADE_1">
+		<description>
+			<p>This near transculent blade changes color to match the preference of its wielder. Crimson Knights often flourish blood red Spellblades while an Air Elementalist's Spellblade might pulse the yellow glow of lightning. While holding this weapon, you gain a +1 bonus to attack and damage rolls made with it, and you gain a +1 bonus to spell attack rolls and the saving throw DCs of your swordmage spells.</p>
+			<p class="indent">While you are wielding this weapon, you can use your Aegis feature without expending one of the feature's uses. Once this property is used, it can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">swordmage, sword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longsword">Weapon</set>
+			<set name="attunement" addition="by a swordmage">true</set>
+			<set name="rarity">uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Longsword</set>
+		</setters>
+		<rules>
+			<stat name="swordmage:spellcasting:attack" value="1" />
+			<stat name="swordmage:spellcasting:dc" value="1" />
+		</rules>
+	</element>
+	<element name="Spellblade +2" type="Magic Item" source="Fanatical's Swordmage" id="ID_FSM_MAGIC_ITEM_SPELLBLADE_2">
+		<description>
+			<p>This near transculent blade changes color to match the preference of its wielder. Crimson Knights often flourish blood red Spellblades while an Air Elementalist's Spellblade might pulse the yellow glow of lightning. While holding this weapon, you gain a +2 bonus to attack and damage rolls made with it, and you gain a +2 bonus to spell attack rolls and the saving throw DCs of your swordmage spells.</p>
+			<p class="indent">While you are wielding this weapon, you can use your Aegis feature without expending one of the feature's uses. Once this property is used, it can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">swordmage, sword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longsword">Weapon</set>
+			<set name="attunement" addition="by a swordmage">true</set>
+			<set name="rarity">rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Longsword</set>
+		</setters>
+		<rules>
+			<stat name="swordmage:spellcasting:attack" value="2" />
+			<stat name="swordmage:spellcasting:dc" value="2" />
+		</rules>
+	</element>
+	<element name="Spellblade +2" type="Magic Item" source="Fanatical's Swordmage" id="ID_FSM_MAGIC_ITEM_SPELLBLADE_2">
+		<description>
+			<p>This near transculent blade changes color to match the preference of its wielder. Crimson Knights often flourish blood red Spellblades while an Air Elementalist's Spellblade might pulse the yellow glow of lightning. While holding this weapon, you gain a +3 bonus to attack and damage rolls made with it, and you gain a +3 bonus to spell attack rolls and the saving throw DCs of your swordmage spells.</p>
+			<p class="indent">While you are wielding this weapon, you can use your Aegis feature without expending one of the feature's uses. Once this property is used, it can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">swordmage, sword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longsword">Weapon</set>
+			<set name="attunement" addition="by a swordmage">true</set>
+			<set name="rarity">legendary</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">Longsword</set>
+		</setters>
+		<rules>
+			<stat name="swordmage:spellcasting:attack" value="3" />
+			<stat name="swordmage:spellcasting:dc" value="3" />
+		</rules>
+	</element>
+
+</elements>

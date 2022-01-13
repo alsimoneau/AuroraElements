@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="10.1.1">
+      <file name="swordmage-spells.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/swordmage-spells.xml" />
+		</update>
+	</info>
+
+	<!-- Cantrips -->
+	<element name="Arcing Weapon" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_ARCING_WEAPON">
+		<supports>Swordmage</supports>
+		<description>
+			<p>As part of the action used to cast this spell, you must make an attack with a weapon against one creature within your weapon's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, and you can choose to have crackling electricity leap from the target to another creature within 15 feet of the target. The second target takes 1d4 lightning damage.</p>
+			<p class="indent">At 5th level, the attack deals extra lightning damage to the first target equal to 1d8 for a melee weapon or 1d6 for a ranged weapon, and increases to 2d8 or 2d6 at 11th level, and 3d8 or 3d6 at 17th level. Also, the damage to the second target increases to 1d6 at 5th level, 1d8 at 11th level, and 1d10 at 17th level.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Range of your weapon</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Burning Weapon" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_BURNING_WEAPON">
+		<supports>Swordmage</supports>
+		<description>
+			<p>As part of the action used to cast this spell, you must make an attack with a weapon against one creature within your weapon's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, and magical fire from your weapon burns the target's defenses until the start of your next turn. The next attack against the target before then, adds a d4 to the attack roll, and the spell ends.</p>
+			<p class="indent">At 5th level, the attack deals extra fire damage to the target equal to 1d8 for a melee weapon or 1d6 for a ranged weapon. The damage roll increases to 2d8 or 2d6 at 11th level, and 3d8 or 3d6 at 17th level.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">Range of your weapon</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Caustic Weapon" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_CAUSTIC_WEAPON">
+		<supports>Swordmage</supports>
+		<description>
+			<p>As part of the action used to cast this spell, you must make an attack with a weapon against one creature within your weapon's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, and corrosive acid burns the target until the start of your next turn. While the acid burns, the target can use its action to remove the acid otherwise the target takes 1d4 acid damage at the end of their next turn.</p>
+			<p class="indent">At 5th level, the attack deals extra acid damage to the target equal to 1d8 for a melee weapon or 1d6 for a ranged weapon, and increases to 2d8 or 2d6 at 11th level, and 3d8 or 3d6 at 17th level. Also, the burning damage to the target increases to 1d6 at 5th level, 1d8 at 11th level, and 1d10 at 17th level.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Range of your weapon</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Freezing Weapon" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_FREEZING_WEAPON">
+		<supports>Swordmage</supports>
+		<description>
+			<p>As part of the action used to cast this spell, you must make an attack with a weapon against one creature within your weapon's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, and your weapon covers the target in frost. The creature subtracts a d4 from their next attack roll until the start of your next turn.</p>
+			<p class="indent">At 5th level, the attack deals extra cold damage to the target equal to 1d8 for a melee weapon or 1d6 for a ranged weapon. The damage roll increases to 2d8 or 2d6 at 11th level, and 3d8 or 3d6 at 17th level.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">Range of your weapon</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Mind Weapon" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_MIND_WEAPON">
+		<supports>Swordmage</supports>
+		<description>
+			<p>As part of the action used to cast this spell, you must make an attack with a weapon against one creature within your weapon's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, and psychic energy assaults their mind. The creature subtracts a d4 from their next ability check until the start of your next turn.</p>
+			<p class="indent">At 5th level, the attack deals extra psyshic damage to the target equal to 1d8 for a melee weapon or 1d6 for a ranged weapon. The damage roll increases to 2d8 or 2d6 at 11th level, and 3d8 or 3d6 at 17th level.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">Range of your weapon</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Protective Blade" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_PROTECTIVE_BLADE">
+		<supports>Swordmage</supports>
+		<description>
+			<p>As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, and it becomes sheathed in abjuring energy until the start of your next turn. If the target willingly attacks a creature other than you before then, the attack is made with disadvantage, and the spell ends.</p>
+			<p class="indent">At 5th level, the melee attack deals an extra 1d8 force damage to the target. The damage roll increases by 1d8 at 11th level and 17th level.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">Range of your weapon</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Stone Weapon" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_STONE_WEAPON">
+		<supports>Swordmage</supports>
+		<description>
+			<p>As part of the action used to cast this spell, you must make an attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, and you are covered in stony armor. You gain a 1d4 bonus to AC until the start of your next turn. If you are attacked before then, the spell ends after the attack is made, and the stony armor crumbles.</p>
+			<p class="indent">At 5th level, the attack deals extra bludgeoning damage to the target equal to 1d8 for a melee weapon or 1d6 for a ranged weapon. The damage roll increases to 2d8 or 2d6 at 11th level, and 3d8 or 3d6 at 17th level.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">Range of your weapon</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Vampiric Weapon" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_VAMPIRIC_WEAPON">
+		<supports>Swordmage</supports>
+		<description>
+			<p>As part of the action used to cast this spell, you must make an attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, and you sap their life force. You gain 1d4 temporary hit points. The temporary hit points disappear at the start of your next turn.</p>
+			<p class="indent">At 5th level, the attack deals extra necrotic damage to the target equal to 1d8 for a melee weapon or 1d6 for a ranged weapon, and increases to 2d8 or 2d6 at 11th level, and 3d8 or 3d6 at 17th level. Also, the temporary hit points gained increases to 1d6 at 5th level, 1d8 at 11th level, and 1d10 at 17th level.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">Range of your weapon</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+
+		<!-- 1st level -->
+		<element name="Corrosive Swordburst" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_CORROSIVE_SWORDBURST">
+			<supports>Swordmage, Spell Saving Throw</supports>
+			<description>
+				<p>You slam your blade into the ground and burning acid bursts forth around you. Each creature within range, other than you, must make a Dexterity saving throw. On a failed save, the creature takes 3d6 acid damage and half as much damage on a successful save.</p>
+				<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.</p>
+			</description>
+			<setters>
+				<set name="keywords"></set>
+				<set name="level">1</set>
+				<set name="school">Evocation</set>
+				<set name="time">1 action</set>
+				<set name="duration">Instantaneous</set>
+				<set name="range">Self (10-foot radius)</set>
+				<set name="hasVerbalComponent">true</set>
+				<set name="hasSomaticComponent">false</set>
+				<set name="hasMaterialComponent">true</set>
+				<set name="materialComponent">a weapon</set>
+				<set name="isConcentration">false</set>
+				<set name="isRitual">false</set>
+			</setters>
+		</element>
+		<element name="Ensnaring Pull" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_ENSNARING_PULL">
+			<supports>Swordmage, Spell Saving Throw</supports>
+			<description>
+				<p>You pull a distant foe through dimensional space to be struck by your blade. As an action, choose a creature within 30 feet of you and they must succeed a Wisdom saving throw. If they fail, you teleport the creature to an unoccupied space adjacent to you, and you can make one melee weapon attack against it. The spell fails if there is no unoccupied space adjacent to you or if you teleport the creature to a space not on the ground or not on a floor.</p>
+				<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the range of the spell increases by 15 feet.</p>
+			</description>
+			<setters>
+				<set name="keywords"></set>
+				<set name="level">1</set>
+				<set name="school">Conjuration</set>
+				<set name="time">1 action</set>
+				<set name="duration">Instantaneous</set>
+				<set name="range">30 ft</set>
+				<set name="hasVerbalComponent">true</set>
+				<set name="hasSomaticComponent">false</set>
+				<set name="hasMaterialComponent">true</set>
+				<set name="materialComponent">a weapon</set>
+				<set name="isConcentration">false</set>
+				<set name="isRitual">false</set>
+			</setters>
+		</element>
+		<element name="Slowing Strike" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_SLOWING_STRIKE">
+			<supports>Swordmage, Spell Saving Throw</supports>
+			<description>
+				<p>The next time you hit a creature with a weapon attack before this spell ends, you slow down time around them, and the target must succeed on a Wisdom saving throw or be affected by this spell until the spell ends.</p>
+				<p class="indent">The affected target's speed is halved, it takes a −2 penalty to AC and Dexterity saving throws, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn.</p>
+				<p class="indent">If the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted.</p>
+				<p class="indent">The target affected by this spell can make another Wisdom saving throw at the end of each of its turns. On a successful save, the effect ends for it.</p>
+			</description>
+			<setters>
+				<set name="keywords"></set>
+				<set name="level">1</set>
+				<set name="school">Transmutation</set>
+				<set name="time">1 bonus action</set>
+				<set name="duration">Concentration, up to 1 minute</set>
+				<set name="range">Self</set>
+				<set name="hasVerbalComponent">true</set>
+				<set name="hasSomaticComponent">false</set>
+				<set name="hasMaterialComponent">true</set>
+				<set name="materialComponent">a weapon</set>
+				<set name="isConcentration">true</set>
+				<set name="isRitual">false</set>
+			</setters>
+		</element>
+		<element name="Venomous Strike" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_VENOMOUS_STRIKE">
+			<supports>Swordmage, Spell Saving Throw</supports>
+			<description>
+				<p>The next time you hit a creature with a weapon attack before this spell ends, you coat your weapon with toxic poison, and the attack deals an extra 1d6 poison damage to the target. Additionally, the target must succeed on a Constitution saving throw or be poisoned until the spell ends.</p>
+				<p class="indent">At the end of each of its turns, the target can make another Constitution saving throw. On a success, the spell ends on the target.</p>
+			</description>
+			<setters>
+				<set name="keywords"></set>
+				<set name="level">1</set>
+				<set name="school">Evocation</set>
+				<set name="time">1 bonus action</set>
+				<set name="duration">Concentration, up to 1 minute</set>
+				<set name="range">Self</set>
+				<set name="hasVerbalComponent">true</set>
+				<set name="hasSomaticComponent">false</set>
+				<set name="hasMaterialComponent">true</set>
+				<set name="materialComponent">a weapon</set>
+				<set name="isConcentration">true</set>
+				<set name="isRitual">false</set>
+			</setters>
+		</element>
+
+
+		<!-- 2nd level -->
+		<element name="Electrifying Swordburst" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_ELECTRIFYING_SWORDBURST">
+			<supports>Swordmage, Spell Saving Throw</supports>
+			<description>
+				<p>Empowering your blade with crackling electricity, you hold your weapon aloft as lightning strikes out at your surrounding foes. Each creature within range, other than you, must make a Dexterity saving throw. On a failed save, the creature takes 3d8 lightning damage and it can't take reactions until the start of its next turn. On a successful save, the creature takes half as much damage and can take reactions. The creature has disadvantage on the saving throw if they are wearing armor made of metal.</p>
+				<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>
+			</description>
+			<setters>
+				<set name="keywords"></set>
+				<set name="level">2</set>
+				<set name="school">Evocation</set>
+				<set name="time">1 action</set>
+				<set name="duration">Instantaneous</set>
+				<set name="range">Self (10-foot radius)</set>
+				<set name="hasVerbalComponent">true</set>
+				<set name="hasSomaticComponent">false</set>
+				<set name="hasMaterialComponent">true</set>
+				<set name="materialComponent">a weapon</set>
+				<set name="isConcentration">false</set>
+				<set name="isRitual">false</set>
+			</setters>
+		</element>
+		<element name="Far Strike" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_FAR_STRIKE">
+ 			<description>
+				<p>You create a temporary portal next to a distant foe to strike at them with your blade. Choose a creature within 120 feet of you and you can make one melee weapon attack against them. The attack deals an extra 2d6 force damage to the target.</p>
+			</description>
+			<setters>
+				<set name="keywords"></set>
+				<set name="level">2</set>
+				<set name="school">Conjuration</set>
+				<set name="time">1 action</set>
+				<set name="duration">Instantaneous</set>
+				<set name="range">120 ft</set>
+				<set name="hasVerbalComponent">true</set>
+				<set name="hasSomaticComponent">false</set>
+				<set name="hasMaterialComponent">true</set>
+				<set name="materialComponent">a weapon</set>
+				<set name="isConcentration">false</set>
+				<set name="isRitual">false</set>
+			</setters>
+		</element>
+		<element name="Isolating Strike" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_ISOLATING_STRIKE">
+			<supports>Swordmage, Spell Saving Throw</supports>
+			<description>
+				<p>The next time you hit a creature with a weapon attack before this spell ends, your weapon crackles with dimensional power, and the attack deals an extra 2d6 force damage to the target. Additionally, the target must succeed on a Wisdom saving throw or be teleported to an unoccupied space up to 30 feet away from you. That space must be on the ground or on a floor.</p>
+			</description>
+			<setters>
+				<set name="keywords"></set>
+				<set name="level">2</set>
+				<set name="school">Conjuration</set>
+				<set name="time">1 bonus action</set>
+				<set name="duration">Concentration, up to 1 minute</set>
+				<set name="range">Self</set>
+				<set name="hasVerbalComponent">true</set>
+				<set name="hasSomaticComponent">false</set>
+				<set name="hasMaterialComponent">true</set>
+				<set name="materialComponent">a weapon</set>
+				<set name="isConcentration">true</set>
+				<set name="isRitual">false</set>
+			</setters>
+		</element>
+		<element name="Predictive Blade" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_PREDICTIVE_BLADE">
+ 			<description>
+				<p>You glimpse into the future to see how your foes react before they do. You have advantage on weapon attack rolls until this spell ends.</p>
+				<p class="indent">When the spell ends, your mind staggers from mental overload, and you have disadvantage on weapon attack rolls until the end of your next turn.</p>
+			</description>
+			<setters>
+				<set name="keywords"></set>
+				<set name="level">2</set>
+				<set name="school">Divination</set>
+				<set name="time">1 bonus action</set>
+				<set name="duration">Concentration, up to 1 minute</set>
+				<set name="range">Self</set>
+				<set name="hasVerbalComponent">true</set>
+				<set name="hasSomaticComponent">false</set>
+				<set name="hasMaterialComponent">true</set>
+				<set name="materialComponent">a weapon</set>
+				<set name="isConcentration">true</set>
+				<set name="isRitual">false</set>
+			</setters>
+		</element>
+		<element name="Synaptic Strike" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_SYNAPTIC_STRIKE">
+			<supports>Swordmage, Spell Saving Throw</supports>
+			<description>
+				<p>The next time you hit a creature with a weapon attack before this spell ends, your weapon strikes with mind altering magic, and the attack deals an extra 2d6 psychic damage to the target. Additionally, the target must succeed on an Intelligence saving throw or have muddled thoughts until the spell ends. During that time, whenever the target makes an attack roll, ability check, or Constitution saving throw to maintain concentration, the target must roll a d6 and subtract the number rolled from the roll.</p>
+				<p class="indent">At the end of each of its turns, the target can make another Intelligence saving throw. On a success, the spell ends on the target.</p>
+			</description>
+			<setters>
+				<set name="keywords"></set>
+				<set name="level">2</set>
+				<set name="school">Enchantment</set>
+				<set name="time">1 bonus action</set>
+				<set name="duration">Concentration, up to 1 minute</set>
+				<set name="range">Self</set>
+				<set name="hasVerbalComponent">true</set>
+				<set name="hasSomaticComponent">false</set>
+				<set name="hasMaterialComponent">true</set>
+				<set name="materialComponent">a weapon</set>
+				<set name="isConcentration">true</set>
+				<set name="isRitual">false</set>
+			</setters>
+		</element>
+
+
+		<!-- 3rd level -->
+		<element name="Blade Storm" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_BLADE_STORM">
+			<supports>Swordmage, Spell Saving Throw</supports>
+			<description>
+				<p>You swing your weapon creating magical duplicates that strike at all foes. Each creature you choose within the area must make a Dexterity saving throw. A creature takes 6d6 force damage on a failed save, or half as much damage on a successful one.</p>
+				<p class="indent">When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</p>
+			</description>
+			<setters>
+				<set name="keywords"></set>
+				<set name="level">3</set>
+				<set name="school">Evocation</set>
+				<set name="time">1 action</set>
+				<set name="duration">Instantaneous</set>
+				<set name="range">Self (30-foot cone)</set>
+				<set name="hasVerbalComponent">true</set>
+				<set name="hasSomaticComponent">false</set>
+				<set name="hasMaterialComponent">true</set>
+				<set name="materialComponent">a weapon</set>
+				<set name="isConcentration">false</set>
+				<set name="isRitual">false</set>
+			</setters>
+		</element>
+		<element name="Dimensional Retaliation" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_DIMENSIONAL_RETALIATION">
+ 			<description>
+				<p>You teleport to an unoccupied space within 5 feet of the creature that attacked you. You can then make one melee weapon attack against the creature. On a hit, the attack deals an additional 3d8 force damage.</p>
+			</description>
+			<setters>
+				<set name="keywords"></set>
+				<set name="level">3</set>
+				<set name="school">Conjuration</set>
+				<set name="time">1 reaction, which you take when you take damage from a ranged attack within 60 ft of you</set>
+				<set name="duration">Instantaneous</set>
+				<set name="range">60 ft</set>
+				<set name="hasVerbalComponent">true</set>
+				<set name="hasSomaticComponent">false</set>
+				<set name="hasMaterialComponent">true</set>
+				<set name="materialComponent">a weapon</set>
+				<set name="isConcentration">false</set>
+				<set name="isRitual">false</set>
+			</setters>
+		</element>
+		<element name="Flaming Swordburst" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_FLAMING_SWORDBURST">
+			<supports>Swordmage, Spell Saving Throw</supports>
+			<description>
+				<p>Raging fire bursts from your blade to engulf your foes in an inferno. Each creature within range, other than you, must make a Dexterity saving throw. On a failed save, the creature takes 4d6 fire damage and is burning. On a successful save, a creature takes half the damage and isn't burning. While a target is burning, it takes 2d6 fire damage at the start of its turn. At the end of each of its turns, the target can make another Dexterity saving throw. On a success, the burning ends on the target.</p>
+				<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the initial damage increases by 1d6 for each slot level above 3rd.</p>
+			</description>
+			<setters>
+				<set name="keywords"></set>
+				<set name="level">3</set>
+				<set name="school">Evocation</set>
+				<set name="time">1 action</set>
+				<set name="duration">Instantaneous</set>
+				<set name="range">Self (20-foot radius)</set>
+				<set name="hasVerbalComponent">true</set>
+				<set name="hasSomaticComponent">false</set>
+				<set name="hasMaterialComponent">true</set>
+				<set name="materialComponent">a weapon</set>
+				<set name="isConcentration">false</set>
+				<set name="isRitual">false</set>
+			</setters>
+		</element>
+		<element name="Frigid Strike" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_FRIGID_STRIKE">
+			<supports>Swordmage, Spell Saving Throw</supports>
+			<description>
+				<p>The next time you hit a creature with a weapon attack before this spell ends, your weapon chills with elemental frost, and the attack deals an extra 3d8 cold damage to the target. Additionally, the target must succeed on a Constitution saving throw or be restrained until the spell ends.</p>
+				<p class="indent">A creature restrained by the frost can use its action to make a Strength or Dexterity check (its choice) against your spell save DC. On a success, it frees itself and the spell ends.</p>
+			</description>
+			<setters>
+				<set name="keywords"></set>
+				<set name="level">3</set>
+				<set name="school">Evocation</set>
+				<set name="time">1 bonus action</set>
+				<set name="duration">Concentration, up to 1 minute</set>
+				<set name="range">Self</set>
+				<set name="hasVerbalComponent">true</set>
+				<set name="hasSomaticComponent">false</set>
+				<set name="hasMaterialComponent">true</set>
+				<set name="materialComponent">a weapon</set>
+				<set name="isConcentration">true</set>
+				<set name="isRitual">false</set>
+			</setters>
+		</element>
+		<element name="Withering Strike" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_WITHERING_STRIKE">
+			<supports>Swordmage, Spell Saving Throw</supports>
+			<description>
+				<p>The next time you hit a creature with a weapon attack before this spell ends, your weapon crackles with life draining energy, and the attack deals an extra 3d8 necrotic damage to the target. Additionally, the target must succeed on a Constitution saving throw or the target deals only half damage with weapon attacks that use Strength until the spell ends.</p>
+				<p class="indent">At the end of each of its turns, the target can make another Constitution saving throw. On a success, the spell ends on the target.</p>
+			</description>
+			<setters>
+				<set name="keywords"></set>
+				<set name="level">3</set>
+				<set name="school">Necromancy</set>
+				<set name="time">1 bonus action</set>
+				<set name="duration">Concentration, up to 1 minute</set>
+				<set name="range">Self</set>
+				<set name="hasVerbalComponent">true</set>
+				<set name="hasSomaticComponent">false</set>
+				<set name="hasMaterialComponent">true</set>
+				<set name="materialComponent">a weapon</set>
+				<set name="isConcentration">true</set>
+				<set name="isRitual">false</set>
+			</setters>
+		</element>
+
+
+		<!-- 4th level -->
+		<element name="Dimensional Vortex" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_DIMENSIONAL_VORTEX">
+			<supports>Swordmage, Spell Saving Throw</supports>
+			<description>
+				<p>You interrupt a creature's attack by warping space with your blade, causing your foe to appear a short distance away and unleash its attack elsewhere. The creature must succeed a Wisdom saving throw or be teleported to an unoccupied space up to 60 feet away from their original location. That space must be on the ground or on a floor. The creature then makes their attack against another creature of your choosing within range. If there is no creature within range, the attack is expended.</p>
+			</description>
+			<setters>
+				<set name="keywords"></set>
+				<set name="level">4</set>
+				<set name="school">Conjuration</set>
+				<set name="time">1 reaction, which you take when you see a creature within 60 ft of you attack you or a friendly creature</set>
+				<set name="duration">Instantaneous</set>
+				<set name="range">60 ft</set>
+				<set name="hasVerbalComponent">true</set>
+				<set name="hasSomaticComponent">false</set>
+				<set name="hasMaterialComponent">true</set>
+				<set name="materialComponent">a weapon</set>
+				<set name="isConcentration">false</set>
+				<set name="isRitual">false</set>
+			</setters>
+		</element>
+		<element name="Festering Blade" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_FESTERING_BLADE">
+			<supports>Swordmage, Spell Saving Throw</supports>
+			<description>
+				<p>The next time you hit a creature with a weapon attack before this spell ends, your weapon darkens with necrotic power, and the attack deals an extra 4d8 necrotic damage to the target. Additionally, the target must succeed on a Constitution saving throw or be wounded for the spell's duration. While wounded, hit points lost to this spell can be regained only through a Short or Long Rest, rather than by regeneration, magic, or any other means.</p>
+				<p class="indent">At the end of each of its turns, the target repeats the saving throw. It takes 2d8 necrotic damage on a failed save, and the spell ends on a successful one.</p>
+			</description>
+			<setters>
+				<set name="keywords"></set>
+				<set name="level">4</set>
+				<set name="school">Necromancy</set>
+				<set name="time">1 bonus action</set>
+				<set name="duration">Concentration, up to 1 minute</set>
+				<set name="range">Self</set>
+				<set name="hasVerbalComponent">true</set>
+				<set name="hasSomaticComponent">false</set>
+				<set name="hasMaterialComponent">true</set>
+				<set name="materialComponent">a weapon</set>
+				<set name="isConcentration">true</set>
+				<set name="isRitual">false</set>
+			</setters>
+		</element>
+		<element name="Fiery Charge" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_FIERY_CHARGE">
+			<supports>Swordmage, Spell Saving Throw</supports>
+			<description>
+				<p>You hurl your blade and it transforms into a line of roaring fire 5 feet wide that extends out from you to a creature within range. Each creature in the line excluding you and the target must make a Dexterity saving throw, taking 4d8 fire damage on a failed save, and half as much damage on a successful one. You then teleport to an unoccupied square within 5 feet of the target. The roaring flames transform back into your weapon and returns to your hand. You can then make one melee weapon attack against the target. On a hit, you deal an extra 4d8 fire damage.</p>
+				<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot above 4th.</p>
+			</description>
+			<setters>
+				<set name="keywords"></set>
+				<set name="level">4</set>
+				<set name="school">Evocation</set>
+				<set name="time">1 action</set>
+				<set name="duration">Instantaneous</set>
+				<set name="range">120 ft</set>
+				<set name="hasVerbalComponent">true</set>
+				<set name="hasSomaticComponent">false</set>
+				<set name="hasMaterialComponent">true</set>
+				<set name="materialComponent">a weapon</set>
+				<set name="isConcentration">false</set>
+				<set name="isRitual">false</set>
+			</setters>
+		</element>
+		<element name="Quaking Swordburst" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_QUAKING_SWORDBURST">
+			<supports>Swordmage, Spell Saving Throw</supports>
+			<description>
+				<p>You slam your weapon into the ground and seismic energy erupts from you. Each creature you choose within the area must make a Dexterity saving throw. On a failed save, the creature takes 4d8 bludgeoning damage and is knocked prone. On a successful save, a creature takes half the damage and isn't knocked prone. Additionally, the ground in that area becomes difficult terrain until cleared. Each 5-foot-square portion of the area requires at least 1 minute to clear by hand.</p>
+				<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the initial damage increases by 1d8 for each slot level above 4th.</p>
+			</description>
+			<setters>
+				<set name="keywords"></set>
+				<set name="level">4</set>
+				<set name="school">Evocation</set>
+				<set name="time">1 action</set>
+				<set name="duration">Instantaneous</set>
+				<set name="range">Self (30-foot radius)</set>
+				<set name="hasVerbalComponent">true</set>
+				<set name="hasSomaticComponent">false</set>
+				<set name="hasMaterialComponent">true</set>
+				<set name="materialComponent">a weapon</set>
+				<set name="isConcentration">false</set>
+				<set name="isRitual">false</set>
+			</setters>
+		</element>
+
+
+		<!-- 5th level -->
+		<element name="Nightmare Swordburst" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_NIGHTMARE_SWORDBURST">
+			<supports>Swordmage, Spell Saving Throw</supports>
+			<description>
+				<p>A wave of terrifying visions burst from your blade as your foes see you as their worst nightmare. Each creature you choose within the area must make a Wisdom saving throw. On a failed save, the creature takes 4d10 psychic damage and is frightened of you for the spell's duration. On a successful save, a creature takes half the damage and isn't frightened.</p>
+				<p class="indent">At the end of each of its turns, a frightened creature repeats the saving throw and the creature is no longer frightened on a successful save.</p>
+			</description>
+			<setters>
+				<set name="keywords"></set>
+				<set name="level">5</set>
+				<set name="school">Enchantment</set>
+				<set name="time">1 action</set>
+				<set name="duration">Concentration, up to 1 minute</set>
+				<set name="range">Self (30-foot radius)</set>
+				<set name="hasVerbalComponent">true</set>
+				<set name="hasSomaticComponent">false</set>
+				<set name="hasMaterialComponent">true</set>
+				<set name="materialComponent">a weapon</set>
+				<set name="isConcentration">true</set>
+				<set name="isRitual">false</set>
+			</setters>
+		</element>
+		<element name="Prismatic Blade" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_PRISMATIC_BLADE">
+			<supports>Swordmage, Spell Saving Throw</supports>
+			<description>
+				<p>Your blade shimmers in multicolor light that entails destruction for your foes. Each time you hit a creature with a weapon attack before this spell ends, roll a d8 to determine which color affects it.</p>
+				<p class="indent">1 - <b>Red.</b> The creature takes an additional 2d8 fire damage.</p>
+				<p class="indent">2 - <b>Orange.</b> The creature takes an additional 2d8 acid damage.</p>
+				<p class="indent">3 - <b>Yellow.</b> The creature takes an additional 2d8 lightning damage.</p>
+				<p class="indent">4 - <b>Green.</b> The creature takes an additional 2d8 poison damage.</p>
+				<p class="indent">5 - <b>Blue.</b> The creature takes an additional 2d8 cold damage.</p>
+				<p class="indent">6 - <b>Indigo.</b> The creature must make a Constitution saving throw or be restrained until the end of your next turn.</p>
+				<p class="indent">7 - <b>Purple.</b> The creature must make a Constitution saving throw or be blinded until the end of your next turn.</p>
+				<p class="indent">8 - <b>Special.</b> The creature is affected by two colors. Roll twice more, rerolling any 8.</p>
+			</description>
+			<setters>
+				<set name="keywords"></set>
+				<set name="level">5</set>
+				<set name="school">Evocation</set>
+				<set name="time">1 bonus action</set>
+				<set name="duration">Concentration, up to 1 minute</set>
+				<set name="range">Self</set>
+				<set name="hasVerbalComponent">true</set>
+				<set name="hasSomaticComponent">false</set>
+				<set name="hasMaterialComponent">true</set>
+				<set name="materialComponent">a weapon</set>
+				<set name="isConcentration">true</set>
+				<set name="isRitual">false</set>
+			</setters>
+		</element>
+		<element name="Shocking Blade" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_SHOCKING_BLADE">
+			<supports>Swordmage, Spell Saving Throw</supports>
+			<description>
+				<p>The next time you hit a creature with a weapon attack before this spell ends, you energize your blade with crackling electricity, and the attack deals an extra 5d10 lightning damage. Additionally, the creature must make a Constitution saving throw or be stunned for the spell's duration.</p>
+				<p class="indent">At the end of each of its turns, the target can make another Constitution saving throw. On a success, the spell ends on the target.</p>
+			</description>
+			<setters>
+				<set name="keywords"></set>
+				<set name="level">5</set>
+				<set name="school">Evocation</set>
+				<set name="time">1 bonus action</set>
+				<set name="duration">Concentration, up to 1 minute</set>
+				<set name="range">Self</set>
+				<set name="hasVerbalComponent">true</set>
+				<set name="hasSomaticComponent">false</set>
+				<set name="hasMaterialComponent">true</set>
+				<set name="materialComponent">a weapon</set>
+				<set name="isConcentration">true</set>
+				<set name="isRitual">false</set>
+			</setters>
+		</element>
+		<element name="Time Warp" type="Spell" source="Fanatical's Swordmage" id="ID_FSM_SPELL_TIME_WARP">
+ 			<description>
+				<p>You warp time to speed yourself up and catch glimpses of other timelines to become aware of all possibilities. For the spell's duration, you have advantage on attack rolls, ability checks, and saving throws. Additionally, other creatures have disadvantage on attack rolls against you for the duration.</p>
+				<p class="indent">When the spell ends, your body is staggered as the various timelines resynchronize, and you have disadvantage on attack rolls, ability checks, and saving throws until the end of your next turn.</p>
+			</description>
+			<setters>
+				<set name="keywords"></set>
+				<set name="level">5</set>
+				<set name="school">Transmutation</set>
+				<set name="time">1 action</set>
+				<set name="duration">Concentration, up to 1 minute</set>
+				<set name="range">Self</set>
+				<set name="hasVerbalComponent">true</set>
+				<set name="hasSomaticComponent">false</set>
+				<set name="hasMaterialComponent">true</set>
+				<set name="materialComponent">a staopwatch or hourglass worth at least 500gp</set>
+				<set name="isConcentration">true</set>
+				<set name="isRitual">false</set>
+			</setters>
+		</element>
+
+</elements>

@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+    <name>Swordmage</name>
+    <description>Fanatical DM's Swordmage class</description>
+    <set name="author" abbreviation="FDM" url="https://www.fanaticaldm.com/">Fanatical DM</set>
+		<update version="10.1.1">
+      <file name="class-swordmage.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/class-swordmage.xml" />
+		</update>
+	</info>
+  <element name="Swordmage" type="Class" source="Fanatical's Swordmage" id="ID_FSM_CLASS_SWORDMAGE">
+      <description>
+          <p>The halfling thief looks around as an ogre finds its hiding spot. As the ogre slams its club down, a swordsman appears with a flash of blue light to block the club with his glowing sword. Between him and his halfling friend, they easily dispatch the surprised ogre.</p>
+          <p class="indent">The mighty dragon breathes fire at the intruder, but the lightly armored elf smiles unconcerned. She strides through the fire, a reddish, magical barrier protecting her from the worst of the flames. The shocked dragon has little time to react to the impossibly alive elf before her blade starts cutting through the dragon's scales.</p>
+          <p class="indent">As the bandit's blade threatens to cut the pale warrior in half, the warrior simply twists his hand and mutters an arcane word of power. The bandit cries out in pain as his sword arm suddenly stops in place. With a chilling smile, the warrior plunges his blade into the bandit savoring the warmth of vitality gained from the bandit's blood.</p>
+          <p class="indent">All these magical warriors are swordmages, combatants that blend magic and martial might. Regardless of a swordmage's magical specialization, magic is crucial to a swordmage. Unlike more mundane warriors, swordmages rely on magic to boost their defensive and offensive capabilities.</p>
+          <h4>IT'S ALL ABOUT THE BLADE</h4>
+          <p>Swordmages spend as much time learning magic as they do practicing their bladework. The synthesis of these dual studies is represented by a swordmage's weapon, which through magical bonding becomes the conduit of a swordmage's magic. As a wizard records their spell knowledge in a spellbook, a swordmage inscribes their magical knowledge as glyphs onto their bonded weapon. Since a swordmage's bonded weapon is not only their tool in combat, but also their source of magic, swordmages treat this weapon with the utmost care. Although the name implies sword wielders, some swordmages choose other weapons such as axes, spears, or flails.</p>
+          <h4>TIMELESS TRADITION</h4>
+          <p>Some say the swordmage tradition started with the elves who once sought to create guardians against a forgotten darkness. Others speak of the magical warriors of fearsome githyanki that terrorize the Astral Sea. Regardless of the tradition's origins, the path of the swordmage entices those ambitious enough to focus on two opposing arts: swordplay and magic.</p>
+          <p class="indent">As the swordmage tradition has grown in popularity, many beyond elves and githyanki have chosen this ambitious practice. Some swordmages were once simple warriors that after witnessing the wonders of devastation of the arcane, then decided to incorporate magic into their fighting style. Other swordmages were once apprentice mages that after a formative event, then realized magic was not enough to survive and achieve their ambitions. Either way, a swordmage requires a dedicated mind and body. One must seek new knowledge but also practice martial excellence.</p>
+          <h4>CREATING A SWORDMAGE</h4>
+          <p>As you build your swordmage, carefully consider two elements of your character's background: where were they trained and what weapon will they bond with? Some cities, especially among magical cultures such as the elves, might have institutions that train aspiring swordmages. Perhaps you were a trained soldier chosen for your intelligence to learn magic in order to help your cause win a war. Maybe you apprenticed with a swordmage mentor who taught you all they knew and you are now striking out on your own.</p>
+					<p class="indent">Furthermore, how does your swordmage fight? The weapon you bond with is an important choice. Was the weapon a family heirloom or perhaps passed down from the master that taught you everything you know? Or did you earn this weapon in combat and it represents your first victory?</p>
+          <h5>QUICK BUILD</h5>
+          <p>You can make a swordmage quickly by following these suggestions. First, your highest ability score should be Dexterity or Strength, depending on whether you focus on regular weapons or on finesse weapons. Your next-highest score should be Intelligence as this determines your magic's power. Second, choose the soldier or scholar background.</p>
+          <h3>CLASS FEATURES</h3>
+          <p>As a swordmage, you gain the following class features.</p>
+          <h5>HIT POINTS</h5>
+          <p>
+              <span class="emphasis">Hit Dice:</span>1d8 per blood hunter level
+              <br />
+              <span class="emphasis">Hit Points at 1st Level:</span>8 + your Constitution modifier
+              <br />
+              <span class="emphasis">Hit Points at Higher Levels:</span>1d8 (or 5) + your Constitution modifier per swordmage level after 1st
+          </p>
+          <h5>PROFICIENCIES</h5>
+          <p>
+              <span class="emphasis">Armor:</span>Light armor, medium armor, shields
+              <br />
+              <span class="emphasis">Weapons:</span>Simple weapons, martial weapons
+              <br />
+              <span class="emphasis">Tools:</span>None
+          </p>
+          <p>
+              <span class="emphasis">Saving Throws:</span>Constitution, Intelligence
+              <br />
+              <span class="emphasis">Skills:</span>Choose two from Acrobatics, Arcana, Athletics, History, Insight, and Investigation
+          </p>
+          <h5>EQUIPMENT</h5>
+          <p>You start with equipment granted by your background, plus either a number of gold coins equal to 5d4 x 10 or choose among the following equipment:</p>
+          <ul>
+              <li>
+                  <i>(a)</i> two martial weapons or
+                  <i>(b)</i> a longbow and a quiver of 20 arrows
+              </li>
+              <li>
+                  <i>(a)</i> a scholar's pack or
+                  <i>(b)</i> an explorer's pack
+              </li>
+              <li>
+                  <i>(a)</i> scale mail or
+                  <i>(b)</i> leather armor
+              </li>
+          </ul>
+					<h5 class="caption">THE SWORDMAGE</h5>
+					<table class="class-features">
+						<thead>
+							<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-5">Blade Magic Uses</td><td class="col-5">Cantrips</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td></tr>
+						</thead>
+						<tr><td> 1st</td><td class="left">Arcane Weapon, Spellcasting</td><td>—</td><td>2</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+						<tr><td> 2nd</td><td class="left">Blade Magic</td><td>2</td><td>2</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+						<tr><td> 3rd</td><td class="left">Swordmage Tradition</td><td>2</td><td>2</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+						<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>2</td><td>2</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+						<tr><td> 5th</td><td class="left">Contrip Strike</td><td>3</td><td>2</td><td>5</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+						<tr><td> 6th</td><td class="left">Magical Armory</td><td>3</td><td>2</td><td>5</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+						<tr><td> 7th</td><td class="left">Archetype Feature</td><td>3</td><td>2</td><td>6</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+						<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>3</td><td>2</td><td>6</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+						<tr><td> 9th</td><td class="left">—</td><td>4</td><td>2</td><td>7</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+						<tr><td>10th</td><td class="left">Favored Spell</td><td>4</td><td>3</td><td>7</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+						<tr><td>11th</td><td class="left">Archetype Feature</td><td>4</td><td>3</td><td>8</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+						<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>4</td><td>3</td><td>8</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+						<tr><td>13th</td><td class="left">—</td><td>5</td><td>3</td><td>9</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+						<tr><td>14th</td><td class="left">Spell Parry</td><td>5</td><td>4</td><td>9</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+						<tr><td>15th</td><td class="left">Archetype Feature</td><td>5</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+						<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>5</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+						<tr><td>17th</td><td class="left">—</td><td>6</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+						<tr><td>18th</td><td class="left">Spellsword Supreme</td><td>6</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+						<tr><td>19th</td><td class="left">Ability Score Improvement</td><td>6</td><td>4</td><td>12</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+						<tr><td>20th</td><td class="left">Archetype Feature</td><td>6</td><td>4</td><td>12</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+					</table>
+          <div element="ID_FSM_CLASS_FEATURE_SWORDMAGE_ARCANE_WEAPON" />
+          <div element="ID_FSM_CLASS_FEATURE_SWORDMAGE_SPELLCASTING" />
+          <div element="ID_FSM_CLASS_FEATURE_SWORDMAGE_BLADE_MAGIC" />
+          <div element="ID_FSM_CLASS_FEATURE_SWORDMAGE_SWORDMAGE_TRADITION" />
+          <div element="ID_FSM_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_SWORDMAGE" />
+          <div element="ID_FSM_CLASS_FEATURE_SWORDMAGE_CANTRIP_STRIKE" />
+          <div element="ID_FSM_CLASS_FEATURE_SWORDMAGE_MAGICAL_ARMORY" />
+          <div element="ID_FSM_CLASS_FEATURE_SWORDMAGE_FAVORED_SPELL" />
+          <div element="ID_FSM_CLASS_FEATURE_SWORDMAGE_SPELL_PARRY" />
+          <div element="ID_FSM_CLASS_FEATURE_SWORDMAGE_SPELLSWORD_SUPREME" />
+      </description>
+      <setters>
+          <set name="short">The arcane half-caster.</set>
+          <set name="hd">d8</set>
+          <set name="sourceUrl">https://drive.google.com/file/d/1KWSho7fX15UvoZPq5OGINJeX-fgTdsen/view</set>
+      </setters>
+      <sheet display="false"/>
+      <rules>
+          <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_FSM_MULTICLASS_SWORDMAGE"/>
+          <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_FSM_MULTICLASS_SWORDMAGE"/>
+          <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_FSM_MULTICLASS_SWORDMAGE"/>
+          <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_FSM_MULTICLASS_SWORDMAGE"/>
+          <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_FSM_MULTICLASS_SWORDMAGE"/>
+          <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_FSM_MULTICLASS_SWORDMAGE"/>
+          <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_FSM_MULTICLASS_SWORDMAGE"/>
+          <select type="Proficiency" name="Skill Proficiency (Swordmage)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION" number="2" requirements="!ID_FSM_MULTICLASS_SWORDMAGE"/>
+          <grant type="Class Feature" id="ID_FSM_CLASS_FEATURE_SWORDMAGE_ARCANE_WEAPON" level="1" />
+          <grant type="Class Feature" id="ID_FSM_CLASS_FEATURE_SWORDMAGE_SPELLCASTING" level="1" />
+          <grant type="Class Feature" id="ID_FSM_CLASS_FEATURE_SWORDMAGE_BLADE_MAGIC" level="2" />
+          <grant type="Class Feature" id="ID_FSM_CLASS_FEATURE_SWORDMAGE_SWORDMAGE_TRADITION" level="3" />
+          <grant type="Class Feature" id="ID_FSM_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_SWORDMAGE" level="4" />
+          <grant type="Class Feature" id="ID_FSM_CLASS_FEATURE_SWORDMAGE_CANTRIP_STRIKE" level="5" />
+          <grant type="Class Feature" id="ID_FSM_CLASS_FEATURE_SWORDMAGE_MAGICAL_ARMORY" level="6" />
+          <grant type="Class Feature" id="ID_FSM_CLASS_FEATURE_SWORDMAGE_FAVORED_SPELL" level="10" />
+          <grant type="Class Feature" id="ID_FSM_CLASS_FEATURE_SWORDMAGE_SPELL_PARRY" level="14" />
+          <grant type="Class Feature" id="ID_FSM_CLASS_FEATURE_SWORDMAGE_SPELLSWORD_SUPREME" level="18" />
+      </rules>
+      <multiclass id="ID_FSM_MULTICLASS_SWORDMAGE">
+          <prerequisite>Intelligence 13 and Strength 13 or Dexterity 13</prerequisite>
+          <requirements>([str:13]||[dex:13]),[int:13]</requirements>
+          <setters>
+              <set name="multiclass proficiencies">Light armor, medium armor, shields, simple weapons, martial weapons, alchemical supplies</set>
+          </setters>
+          <rules>
+              <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+              <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+              <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+              <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+              <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+              <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+          </rules>
+      </multiclass>
+  </element>
+
+	<element name="Arcane Weapon" type="Class Feature" source="Fanatical's Swordmage" id="ID_FSM_CLASS_FEATURE_SWORDMAGE_ARCANE_WEAPON">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ARCANE_WEAPON</requirements>
+		<description>
+			<p>At 1st level, you learn a ritual that magically transforms one weapon into your magical conduit. You perform the ritual over the course of 1 hour, which can be done during a short rest. The weapon must be within your reach throughout the ritual, at the conclusion of which you touch the weapon and transform it into your Arcane Weapon. The chosen weapon becomes your spellcasting focus for your swordmage spells.</p>
+			<ul>
+				<li>When you start to attack or cast a spell, you can summon your Arcane Weapon to your hand before making the attack or casting the spell. You can't summon your Arcane Weapon if you don't have the free hands needed to wield the weapon and if your weapon isn't on your person, such as in a sheath.</li>
+				<li>If your Arcane Weapon is broken or damaged, you can spend 1 hour to magically repair the weapon.</li>
+				<li>Your Arcane Weapon can shed bright light in a 10-foot radius and dim light for an additional 10 feet. As an action, you can turn the light off or on.</li>
+			</ul>
+			<p class="indent">If you attempt to bond with another weapon, you must break the bond with your current Arcane Weapon.</p>
+		</description>
+		<sheet>
+			<description>You perform the ritual over the course of 1 hour, which can be done during a short rest. The weapon must be within your reach throughout the ritual, at the conclusion of which you touch the weapon and transform it into your Arcane Weapon. The chosen weapon becomes your spellcasting focus for your swordmage spells. When you start to attack or cast a spell, you can summon your Arcane Weapon to your hand before making the attack or casting the spell. You can't summon your Arcane Weapon if you don't have the free hands needed to wield the weapon and if your weapon isn't on your person, such as in a sheath. If your Arcane Weapon is broken or damaged, you can spend 1 hour to magically repair the weapon. Your Arcane Weapon can shed bright light in a 10-foot radius and dim light for an additional 10 feet. As an action, you can turn the light off or on. If you attempt to bond with another weapon, you must break the bond with your current Arcane Weapon.</description>
+		</sheet>
+	</element>
+	<element name="Spellcasting" type="Class Feature" source="Fanatical's Swordmage" id="ID_FSM_CLASS_FEATURE_SWORDMAGE_SPELLCASTING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_SPELLCASTING</requirements>
+		<description>
+			<p>You've studied the battle application of magic and inscribe your chosen weapon with a handful of spells to augment your fighting style. You channel your magic through your Arcane Weapon, which appears to others as if you're producing magical wonders as you fight.</p>
+			<h5>WEAPON REQUIRED</h5>
+			<p>You produce your swordmage spell effects through your blade. You must have a spellcasting focus-specifically your Arcane Weapon or another weapon-in hand when you cast any spell with this Spellcasting feature (meaning the spell has a "M" component when you cast it).</p>
+			<h5>CANTRIPS (0-LEVEL SPELLS)</h5>
+			<p>At 1st level, you know two cantrips of your choice from the swordmage spell list. At higher levels, you learn additional swordmage cantrips of your choice, as shown in the Cantrips Known column of the swordmage table. When you gain a level in this class, you can replace one of the swordmage cantrips you know with another cantrip from the swordmage spell list.</p>
+			<h5>SPELL SLOTS</h5>
+			<p>The Swordmage table shows how many spell slots you have to cast your swordmage spells of 1st level and higher. To cast one of these swordmage spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<h5>SPELLS KNOWN OF 1ST LEVEL AND HIGHER</h5>
+			<p>You know two 1st-level spells of your choice from the swordmage spell list.</p>
+			<p class="indent">The Spells Known column of the Swordmage table shows when you learn more swordmage spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+			<p class="indent">Additionally, when you gain a level in this class, you can choose one of the swordmage spells you know and replace it with another spell from the swordmage spell list, which also must be of a level for which you have spell slots.</p>
+			<h5>SPELLCASTING ABILITY</h5>
+			<p>Intelligence is your spellcasting ability for your swordmage spells, since your magic reflects your arcane studies. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a swordmage spell you cast and when making an attack roll with one.</p>
+			<p>
+					<span class="emphasis">Spell save DC</span> = 8 + your proficiency bonus + your	Intelligence modifier
+					<br />
+					<span class="emphasis">Spell attack modifier</span> = your proficiency bonus + your	Intelligence modifier
+					<br />
+					<span class="emphasis">Spellcasting Focus:</span> You can use your Arcane Weapon as	your spellcasting focus for swordmage spells.
+			</p>
+
+			<p class="indent">See chapter 10 of the Player’s Handbook for the general	rules of spellcasting.</p>
+		</description>
+		<sheet display="False">
+			<description>You've studied the battle application of magic and inscribe your chosen weapon with a handful of spells to augment your fighting style. You channel your magic through your Arcane Weapon, which appears to others as if you're producing magical wonders as you fight.</description>
+		</sheet>
+		<spellcasting name="Swordmage" ability="Intelligence" allowReplace="true">
+			<list>Swordmage</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_FSM_SWORDMAGE_SPELLCASTING_BASE_SPELLS" />
+			<grant type="Grants" id="ID_FSM_SWORDMAGE_SPELLCASTING_NEW_SPELLS" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<stat name="swordmage:spellcasting:slots:0" value="2" level="1" />
+			<stat name="swordmage:spellcasting:slots:0" value="1" level="10" />
+			<stat name="swordmage:spellcasting:slots:0" value="1" level="14" />
+			<stat name="swordmage:spellcasting:slots:1" value="2" level="1" />
+			<stat name="swordmage:spellcasting:slots:1" value="1" level="3" />
+			<stat name="swordmage:spellcasting:slots:1" value="1" level="5" />
+			<stat name="swordmage:spellcasting:slots:2" value="2" level="5" />
+			<stat name="swordmage:spellcasting:slots:2" value="1" level="7" />
+			<stat name="swordmage:spellcasting:slots:3" value="2" level="9" />
+			<stat name="swordmage:spellcasting:slots:3" value="1" level="11" />
+			<stat name="swordmage:spellcasting:slots:4" value="1" level="13" />
+			<stat name="swordmage:spellcasting:slots:4" value="1" level="15" />
+			<stat name="swordmage:spellcasting:slots:4" value="1" level="17" />
+			<stat name="swordmage:spellcasting:slots:5" value="1" level="17" />
+			<stat name="swordmage:spellcasting:slots:5" value="1" level="19" />
+			<select type="Spell" name="Spellcasting (Swordmage)" supports="$(spellcasting:list),$(spellcasting:slots)" level="1" number="2" spellcasting="Swordmage"/>
+			<select type="Spell" name="Spellcasting (Swordmage)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" spellcasting="Swordmage" />
+			<select type="Spell" name="Spellcasting (Swordmage)" supports="$(spellcasting:list),$(spellcasting:slots)" level="5" spellcasting="Swordmage" />
+			<select type="Spell" name="Spellcasting (Swordmage)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="Swordmage" />
+			<select type="Spell" name="Spellcasting (Swordmage)" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" spellcasting="Swordmage" />
+			<select type="Spell" name="Spellcasting (Swordmage)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="Swordmage" />
+			<select type="Spell" name="Spellcasting (Swordmage)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="Swordmage" />
+			<select type="Spell" name="Spellcasting (Swordmage)" supports="$(spellcasting:list),$(spellcasting:slots)" level="15" spellcasting="Swordmage" />
+			<select type="Spell" name="Spellcasting (Swordmage)" supports="$(spellcasting:list),$(spellcasting:slots)" level="17" spellcasting="Swordmage" />
+			<select type="Spell" name="Spellcasting (Swordmage)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="Swordmage" />
+		</rules>
+	</element>
+	<element name="Swordmage spell list" type="Class Feature" source="Fanatical's Swordmage" id="ID_FSM_SWORDMAGE_SPELLCASTING_BASE_SPELLS">
+		<compendium display="false" />
+		<sheet display="false" />
+		<spellcasting name="Swordmage" extend="true">
+			<!-- Cantrips -->
+			<extend>ID_PHB_SPELL_ACID_SPLASH</extend>
+			<extend>ID_PHB_SPELL_BLADE_WARD</extend>
+			<extend>ID_WOTC_SCAG_SPELL_BOOMING_BLADE</extend>
+			<extend>ID_WOTC_TCOE_SPELL_BOOMING_BLADE</extend>
+			<extend>ID_PHB_SPELL_FIRE_BOLT</extend>
+			<extend>ID_XGTE_SPELL_FROSTBITE</extend>
+			<extend>ID_SCAG_SPELL_GREEN_FLAME_BLADE</extend>
+			<extend>ID_WOTC_TCOE_SPELL_GREENFLAME_BLADE</extend>
+			<extend>ID_PHB_SPELL_LIGHT</extend>
+			<extend>ID_SCAG_SPELL_LIGHTNING_LURE</extend>
+			<extend>ID_WOTC_TCOE_SPELL_LIGHTNING_LURE</extend>
+			<extend>ID_PHB_SPELL_MAGE_HAND</extend>
+			<extend>ID_PHB_SPELL_MENDING</extend>
+			<extend>ID_PHB_SPELL_MESSAGE</extend>
+			<extend>ID_PHB_SPELL_POISON_SPRAY</extend>
+			<extend>ID_PHB_SPELL_PRESTIDIGITATION</extend>
+			<extend>ID_PHB_SPELL_RAY_OF_FROST</extend>
+			<extend>ID_PHB_SPELL_SHOCKING_GRASP</extend>
+			<extend>ID_SCAG_SPELL_SWORD_BURST</extend>
+			<extend>ID_WOTC_TCOE_SPELL_SWORD_BURST</extend>
+			<extend>ID_PHB_SPELL_TRUE_STRIKE</extend>
+			<!-- 1st level -->
+			<extend>ID_XGTE_SPELL_ABSORB_ELEMENTS</extend>
+			<extend>ID_PHB_SPELL_BURNING_HANDS</extend>
+			<extend>ID_PHB_SPELL_CHROMATIC_ORB</extend>
+			<extend>ID_PHB_SPELL_DETECT_MAGIC</extend>
+			<extend>ID_PHB_SPELL_EXPEDITIOUS_RETREAT</extend>
+			<extend>ID_PHB_SPELL_FEATHER_FALL</extend>
+			<extend>ID_XGTE_SPELL_ICE_KNIFE</extend>
+			<extend>ID_PHB_SPELL_IDENTIFY</extend>
+			<extend>ID_PHB_SPELL_MAGE_ARMOR</extend>
+			<extend>ID_PHB_SPELL_MAGIC_MISSILE</extend>
+			<extend>ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD</extend>
+			<extend>ID_PHB_SPELL_SHIELD</extend>
+			<extend>ID_PHB_SPELL_THUNDERWAVE</extend>
+			<!-- 2nd level -->
+			<extend>ID_PHB_SPELL_BLUR</extend>
+			<extend>ID_PHB_SPELL_DARKNESS</extend>
+			<extend>ID_PHB_SPELL_DARKVISION</extend>
+			<extend>ID_PHB_SPELL_ENHANCE_ABILITY</extend>
+			<extend>ID_PHB_SPELL_ENLARGE_REDUCE</extend>
+			<extend>ID_PHB_SPELL_MAGIC_WEAPON</extend>
+			<extend>ID_PHB_SPELL_MIRROR_IMAGE</extend>
+			<extend>ID_PHB_SPELL_MISTY_STEP</extend>
+			<extend>ID_PHB_SPELL_SEE_INVISIBILITY</extend>
+			<extend>ID_XGTE_SPELL_SHADOW_BLADE</extend>
+			<extend>ID_XGTE_SPELL_SHADOW_BLADE</extend>
+			<!-- 3rd level -->
+			<extend>ID_PHB_SPELL_BLINK</extend>
+			<extend>ID_XGTE_SPELL_COUNTERSPELL</extend>
+			<extend>ID_XGTE_SPELL_DISPEL_MAGIC</extend>
+			<extend>ID_PHB_SPELL_ELEMENTAL_WEAPON</extend>
+			<extend>ID_PHB_SPELL_FLY</extend>
+			<extend>ID_PHB_SPELL_HASTE</extend>
+			<extend>ID_PHB_SPELL_PROTECTION_FROM_ENERGY</extend>
+			<extend>ID_WOTC_TCOE_SPELL_SPIRIT_SHROUD</extend>
+			<extend>ID_XGTE_SPELL_THUNDER_STEP</extend>
+			<!-- 4th level -->
+			<extend>ID_PHB_SPELL_BANISHMENT</extend>
+			<extend>ID_PHB_SPELL_DIMENSION_DOOR</extend>
+			<extend>ID_PHB_SPELL_FIRE_SHIELD</extend>
+			<extend>ID_PHB_SPELL_STONESKIN</extend>
+			<!-- 5th level -->
+			<extend>ID_XGTE_SPELL_FAR_STEP</extend>
+			<extend>ID_XGTE_SPELL_STEEL_WIND_STRIKE</extend>
+			<extend>ID_PHB_SPELL_TELEPORTATION_CIRCLE</extend>
+		</spellcasting>
+	</element>
+	<element name="Swordmage spell list" type="Class Feature" source="Fanatical's Swordmage" id="ID_FSM_SWORDMAGE_SPELLCASTING_NEW_SPELLS">
+		<compendium display="false" />
+		<sheet display="false" />
+		<spellcasting name="Swordmage" extend="true">
+			<!-- Cantrips -->
+			<extend>ID_FSM_SPELL_ARCING_WEAPON</extend>
+			<extend>ID_FSM_SPELL_BURNING_WEAPON</extend>
+			<extend>ID_FSM_SPELL_CAUSTIC_WEAPON</extend>
+			<extend>ID_FSM_SPELL_FREEZING_WEAPON</extend>
+			<extend>ID_FSM_SPELL_MIND_WEAPON</extend>
+			<extend>ID_FSM_SPELL_PROTECTIVE_BLADE</extend>
+			<extend>ID_FSM_SPELL_STONE_WEAPON</extend>
+			<extend>ID_FSM_SPELL_VAMPIRIC_WEAPON</extend>
+			<!-- 1st level -->
+			<extend>ID_FSM_SPELL_CORROSIVE_SWORDBURST</extend>
+			<extend>ID_FSM_SPELL_ENSNARING_PULL</extend>
+			<extend>ID_FSM_SPELL_SLOWING_STRIKE</extend>
+			<extend>ID_FSM_SPELL_VENOMOUS_STRIKE</extend>
+			<!-- 2nd level -->
+			<extend>ID_FSM_SPELL_ELECTRIFYING_SWORDBURST</extend>
+			<extend>ID_FSM_SPELL_FAR_STRIKE</extend>
+			<extend>ID_FSM_SPELL_ISOLATING_STRIKE</extend>
+			<extend>ID_FSM_SPELL_PREDICTIVE_BLADE</extend>
+			<extend>ID_FSM_SPELL_SYNAPTIC_STRIKE</extend>
+			<!-- 3rd level -->
+			<extend>ID_FSM_SPELL_BLADE_STORM</extend>
+			<extend>ID_FSM_SPELL_DIMENSIONAL_RETALIATION</extend>
+			<extend>ID_FSM_SPELL_FLAMING_SWORDBURST</extend>
+			<extend>ID_FSM_SPELL_FRIGID_STRIKE</extend>
+			<!-- 4th level -->
+			<extend>ID_FSM_SPELL_DIMENSIONAL_VORTEX</extend>
+			<extend>ID_FSM_SPELL_FESTERING_BLADE</extend>
+			<extend>ID_FSM_SPELL_FIERY_CHARGE</extend>
+			<extend>ID_FSM_SPELL_QUAKING_SWORDBURST</extend>
+			<!-- 5th level -->
+			<extend>ID_FSM_SPELL_NIGHTMARE_SWORDBURST</extend>
+			<extend>ID_FSM_SPELL_PRISMATIC_BLADE</extend>
+			<extend>ID_FSM_SPELL_SHOCKING_BLADE</extend>
+			<extend>ID_FSM_SPELL_TIME_WARP</extend>
+		</spellcasting>
+	</element>
+	<element name="Blade Magic" type="Class Feature" source="Fanatical's Swordmage" id="ID_FSM_CLASS_FEATURE_SWORDMAGE_BLADE_MAGIC">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_BLADE_MAGIC</requirements>
+		<description>
+			<p>Starting at 2nd level, you can seamlessly blend your magic and bladework. After you use your action to cast a spell, you can make one weapon attack as part of the same action.</p>
+			<p class="indent">Your swordmage level determines how often you can use this feature, as shown in the Blade Magic Uses column of the Swordmage table. You regain uses after completing a long rest.</p>
+		</description>
+		<sheet action="Action" usage="{{blade magic:count}}/Long rest">
+			<description>After you use your action to cast a spell, you can make one weapon attack as part of the same action.</description>
+		</sheet>
+		<rules>
+			<stat name="blade magic:count" value="2" level="2"/>
+			<stat name="blade magic:count" value="1" level="5"/>
+			<stat name="blade magic:count" value="1" level="9"/>
+			<stat name="blade magic:count" value="1" level="13"/>
+			<stat name="blade magic:count" value="1" level="17"/>
+		</rules>
+	</element>
+	<element name="Swordmage Tradition" type="Class Feature" source="Fanatical's Swordmage" id="ID_FSM_CLASS_FEATURE_SWORDMAGE_SWORDMAGE_TRADITION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_SWORDMAGE_TRADITION</requirements>
+		<description>
+			<p>Most swordmages prioritize certain types of magic and choosing your tradition reflects your arcane preferences and possible schooling. You fully specialize when you reach 3rd level, and the power you gain represents the culmination of all of your training.</p>
+			<p class="indent">When you reach 3rd level, you choose a tradition that reflects your magical specialization. The details on the specific traditions are at the end of this document.</p>
+			<p class="indent">Your choice grants you features at 3rd level and again at 7th, 11th, 15th, and 20th level. Those features also include aegis spells and an aegis.</p>
+			<h5>Aegis Spells</h5>
+			<p class="indent">Each swordmage tradition has a list of additional spells that you automatically learn at the denoted levels. The spells count as Swordmage spells for you, but do not count against the number of Swordmage spells you know.</p>
+			<h5>Aegis</h5>
+			<p class="indent">Your swordmage tradition gives you a powerful dweomer called an Aegis. Each Aegis provided by your tradition explains how to use it. You must then finish a short or long rest to use your Aegis again.</p>
+			<p class="indent">The saving throw DC for your Aegis effects is equal to your swordmage spell save DC.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Swordmage Tradition" supports="Swordmage Tradition" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="Fanatical's Swordmage" id="ID_FSM_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_SWORDMAGE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ABILITYSCOREIMPROVEMENT_SWORDMAGE</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Swordmage 4)" supports="Improvement Option,Swordmage,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Swordmage 8)" supports="Improvement Option,Swordmage,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Swordmage 12)" supports="Improvement Option,Swordmage,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Swordmage 16)" supports="Improvement Option,Swordmage,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Swordmage 19)" supports="Improvement Option,Swordmage,19" level="19" />
+		</rules>
+	</element>
+	<element name="Cantrip Strike" type="Class Feature" source="Fanatical's Swordmage" id="ID_FSM_CLASS_FEATURE_SWORDMAGE_CANTRIP_STRIKE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_CANTRIP_STRIKE</requirements>
+		<description>
+			<p>Starting at 5th level of this class, you have mastered the art of combining lesser spells with your weapon. After you use your action to cast a cantrip, you can make one weapon attack as part of the same action without expending a use of Blade Magic.</p>
+		</description>
+		<sheet>
+			<description>After you use your action to cast a cantrip, you can make one weapon attack as part of the same action without expending a use of Blade Magic.</description>
+		</sheet>
+	</element>
+	<element name="Magical Armory" type="Class Feature" source="Fanatical's Swordmage" id="ID_FSM_CLASS_FEATURE_SWORDMAGE_MAGICAL_ARMORY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_MAGICAL_ARMORY</requirements>
+		<description>
+			<p>At 6th level, you can bind equipment to yourself in the same ritual you use to transform a weapon into your Arcane Weapon. You can bind a number of equipment equal to your proficiency bonus. If the equipment belongs to another creature, then the ritual fails if the creature doesn't consent to the ritual. If you attempt to bond with another equipment beyond your maximum limit, you must choose to break the bond with one of the other items.</p>
+			<p class="indent">If your Arcane Weapon or any bound equipment are on the same plane of existence as you, you can summon any number of them as a bonus action on your turn, causing the bound equipment to teleport to you, and instantly equipping the items in the process. If any of the bound equipment belongs to another creature, and that creature is within 30 feet of you, then the item is equipped to that creature. If the owner has another item equipped, then the previously equipped item falls to the ground as part of this action. If the owner isn't willing, then the summoned item falls to the ground.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can bind {{proficiency}} pieces of equipments to yourself in the same ritual you use to transform a weapon into your Arcane Weapon. If the equipment belongs to another creature, then the ritual fails if the creature doesn't consent to the ritual. If your Arcane Weapon or any bound equipment are on the same plane of existence as you, you can summon any number of them as a bonus action on your turn, causing the bound equipment to teleport to you, and instantly equipping the items in the process. If any of the bound equipment belongs to another creature, and that creature is within 30 feet of you, then the item is equipped to that creature. If the owner has another item equipped, then the previously equipped item falls to the ground as part of this action. If the owner isn't willing, then the summoned item falls to the ground.</description>
+		</sheet>
+	</element>
+	<element name="Favored Spell" type="Class Feature" source="Fanatical's Swordmage" id="ID_FSM_CLASS_FEATURE_SWORDMAGE_FAVORED_SPELL">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_FAVORED_SPELL</requirements>
+		<description>
+			<p>By 10th level, after much practice and study, you have mastered the art of combining a specific spell with your blade. Choose a swordmage spell that you know. You can use Blade Magic when casting that spell without expending a use of Blade Magic.</p>
+			<p class="indent">By spending 8 hours in study, you can change your Favored Spell to another Swordmage spell that you know.</p>
+		</description>
+		<sheet>
+			<description>Choose a swordmage spell that you know. You can use Blade Magic when casting that spell without expending a use of Blade Magic. By spending 8 hours in study, you can change your Favored Spell to another Swordmage spell that you know.</description>
+		</sheet>
+	</element>
+	<element name="Spell Parry" type="Class Feature" source="Fanatical's Swordmage" id="ID_FSM_CLASS_FEATURE_SWORDMAGE_SPELL_PARRY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_SPELL_PARRY</requirements>
+		<description>
+			<p>At 14th level, when you see a creature within 60 feet of you cast a spell, you can use your reaction to interrupt their spell with your weapon. The spell must target only a single creature within 15 feet of you. Make a weapon attack roll against the caster's spell save DC. On a success, the caster's spell fails and has no effect.</p>
+			<p class="indent">You can use this feature a number of times equal to your Intelligence modifier (a minimum of once). You regain expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="{{spell parry:count}}/Long Rest">
+			<description>When you see a creature within 60 feet of you cast a spell, you can use your reaction to interrupt their spell with your weapon. The spell must target only a single creature within 15 feet of you. Make a weapon attack roll against the caster's spell save DC. On a success, the caster's spell fails and has no effect.</description>
+		</sheet>
+		<rules>
+			<stat name="spell parry:count" value="1" bonus="spell parry" />
+			<stat name="spell parry:count" value="intelligence:modifier" bonus="spell parry" />
+		</rules>
+	</element>
+	<element name="Spellsword Supreme" type="Class Feature" source="Fanatical's Swordmage" id="ID_FSM_CLASS_FEATURE_SWORDMAGE_SPELLSWORD_SUPREME">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_SPELLSWORD_SUPREME</requirements>
+		<description>
+			<p>Starting at 18th level, you excel at blending together sword and spell. If you roll initiative and have no uses of Blade Magic remaining, you regain one use of it.</p>
+		</description>
+		<sheet>
+			<description>If you roll initiative and have no uses of Blade Magic remaining, you regain one use of it.</description>
+		</sheet>
+	</element>
+
+	<element name="Arcane Weapon Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ARCANE_WEAPON" />
+	<element name="Spellcasting Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_SPELLCASTING" />
+	<element name="Blade Magic Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_BLADE_MAGIC" />
+	<element name="Swordmage Tradition Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_SWORDMAGE_TRADITION" />
+	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ABILITYSCOREIMPROVEMENT_SWORDMAGE" />
+	<element name="Cantrip Strike Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_CANTRIP_STRIKE" />
+	<element name="Magical Armory Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_MAGICAL_ARMORY" />
+	<element name="Favored Spell Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_FAVORED_SPELL" />
+	<element name="Spell Parry Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_SPELL_PARRY" />
+	<element name="Spellsword Supreme Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_SPELLSWORD_SUPREME" />
+</elements>

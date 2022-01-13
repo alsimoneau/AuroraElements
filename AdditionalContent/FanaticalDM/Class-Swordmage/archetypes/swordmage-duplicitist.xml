@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="10.1.1">
+      <file name="swordmage-dupliticist.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/archetypes/swordmage-dupliticist.xml" />
+		</update>
+	</info>
+
+	<element name="Duplicitist" type="Archetype" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_SWORDMAGE_DUPLICITIST">
+		<supports>Swordmage Tradition</supports>
+		<description>
+			<p>By choosing the Duplicitist archetype, you weave illusions and enchantments to become an illusive threat. Duplicitist swordmages are often deadly assassins, admirers of the fey, cunning warriors, or mischief makers.</p>
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_DUPLICITIST_AEGIS" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_DUPLICITIST_AEGIS_SPELLS" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_DUPLICITIST_CUNNING_TRICKERY" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_DUPLICITIST_BEGUILING_MAGIC" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_DUPLICITIST_MASTER_OF_DISGUISE" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_DUPLICITIST_ILLUSIVE_ESCAPE" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_DUPLICITIST_DOUBLE_TROUBLE" />
+		</description>
+		<sheet display="false">
+			<description>By choosing the Duplicitist archetype, you weave illusions and enchantments to become an illusive threat. Duplicitist swordmages are often deadly assassins, admirers of the fey, cunning warriors, or mischief makers.</description>
+		</sheet>
+		<rules>
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_DUPLICITIST_AEGIS" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_DUPLICITIST_AEGIS_SPELLS" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_DUPLICITIST_CUNNING_TRICKERY" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_DUPLICITIST_BEGUILING_MAGIC" level="7" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_DUPLICITIST_MASTER_OF_DISGUISE" level="11" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_DUPLICITIST_ILLUSIVE_ESCAPE" level="15" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_DUPLICITIST_DOUBLE_TROUBLE" level="20" />
+		</rules>
+	</element>
+
+  <element name="Aegis" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_DUPLICITIST_AEGIS">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_DUPLICITIST_AEGIS</requirements>
+    <description>
+      <p>When you take this archetype at 3rd level, you gain the following Aegis option:</p>
+      <p class="indent"><b>Aegis of Deception.</b> As a bonus action, you can activate this Aegis to become invisible until the end of your turn. For the duration of this Aegis, you can use your bonus action to gain the same benefit. The invisibility granted from your Aegis always ends early if you attack or cast a spell.</p>
+      <p class="indent">Your Aegis Blade lasts for 1 minute, ending early if you fall unconscious or die.</p>
+    </description>
+    <sheet alt="Aegis of Deception" action="Bonus Action" usage="1/Short Rest">
+      <description>As a bonus action, you can activate this Aegis to become invisible until the end of your turn. For the duration of this Aegis, you can use your bonus action to gain the same benefit. The invisibility granted from your Aegis always ends early if you attack or cast a spell. Your Aegis Blade lasts for 1 minute, ending early if you fall unconscious or die.</description>
+    </sheet>
+  </element>
+  <element name="Aegis Spells" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_DUPLICITIST_AEGIS_SPELLS">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_DUPLICITIST_AEGIS_SPELLS</requirements>
+    <description>
+      <p>You gain aegis spells at the swordmage level listed below.</p>
+      <h5 class="caption">DUPLICITIST SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Swordmage Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3st</td><td><em>charm person</em></td></tr>
+				<tr><td>5rd</td><td><em>invisibility</em></td></tr>
+				<tr><td>9th</td><td><em>enemies abound</em></td></tr>
+				<tr><td>13th</td><td><em>greater invisibility</em></td></tr>
+				<tr><td>17th</td><td><em>mislead</em></td></tr>
+			</table>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" level="3" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" level="5" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_XGTE_SPELL_ENEMIES_ABOUND" level="9" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_PHB_SPELL_GREATER_INVISIBILITY" level="13" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_PHB_SPELL_MISLEAD" level="17" spellcasting="Swordmage" />
+    </rules>
+  </element>
+  <element name="Cunning Trickery" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_DUPLICITIST_CUNNING_TRICKERY">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_DUPLICITIST_CUNNING_TRICKERY</requirements>
+    <description>
+      <p>At 3rd level, you are an expert at trickery. You pick from one of the following two options:</p>
+      <ul>
+        <li>Enchantment: You know the friends cantrip and gain proficiency in the Deception skill.</li>
+        <li>Illusion: You know the minor illusion cantrip and gain proficiency in the Stealth skill.</li>
+      </ul>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Archetype Feature" name="Cunning Trickery" supports="Cunning Trickery" />
+    </rules>
+  </element>
+  <element name="Enchantment" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_CUNNING_TRICKERY_ENCHANTMENT">
+    <supports>Cunning Trickery</supports>
+    <compendium display="false" />
+    <sheet alt="Cunning Trickery, Enchantment">
+      You know the friends cantrip and gain proficiency in the Deception skill.
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_FRIENDS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+    </rules>
+  </element>
+  <element name="Illusion" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_CUNNING_TRICKERY_ILLUSION">
+    <supports>Cunning Trickery</supports>
+    <compendium display="false" />
+    <sheet alt="Cunning Trickery, Illusion">
+      You know the minor illusion cantrip and gain proficiency in the Stealth skill.
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_MINOR_ILLUSION" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+    </rules>
+  </element>
+  <element name="Beguiling Magic" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_DUPLICITIST_BEGUILING_MAGIC">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_DUPLICITIST_BEGUILING_MAGIC</requirements>
+    <description>
+      <p>When you reach 7th level, your slippery magic aids your subterfuge. Your proficiency bonus is doubled for any ability check you make that uses the proficiency you gained from your Cunning Trickery feature.</p>
+      <p class="indent">You can also use mind altering magic to make your spells difficult to resist. When a creature makes a saving throw against one of your spells, you can impose disadvantage on the saving throw as a reaction. Once you use this reaction, you can't use it again until after a short or long rest.</p>
+    </description>
+    <sheet action="Reaction" usage="1/Short Rest">
+      <description>When a creature makes a saving throw against one of your spells, you can impose disadvantage on the saving throw as a reaction.</description>
+    </sheet>
+    <rules>
+      <grant type="Class Feature" id="ID_EXPERTISE_SKILL_DECEPTION" requirements="ID_FSM_ARCHETYPE_FEATURE_CUNNING_TRICKERY_ENCHANTMENT" />
+      <grant type="Class Feature" id="ID_EXPERTISE_SKILL_STEALTH" requirements="ID_FSM_ARCHETYPE_FEATURE_CUNNING_TRICKERY_ILLUSION" />
+    </rules>
+  </element>
+  <element name="Master of Disguise" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_DUPLICITIST_MASTER_OF_DISGUISE">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_DUPLICITIST_MASTER_OF_DISGUISE</requirements>
+    <description>
+      <p>At 11th level, you can effortlessly cloak yourself in illusion. You can cast disguise self at will, without expending a spell slot.</p>
+      <div class="reference">
+				<div element="ID_PHB_SPELL_DISGUISE_SELF" />
+			</div>
+    </description>
+    <sheet>
+      <description>You can cast disguise self at will, without expending a spell slot.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" />
+    </rules>
+  </element>
+  <element name="Illusive Escape" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_DUPLICITIST_ILLUSIVE_ESCAPE">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_DUPLICITIST_ILLUSIVE_ESCAPE</requirements>
+    <description>
+      <p>Starting at 15th level, you can quickly escape from danger while leaving behind a mirror image of yourself. When you turn invisible from a spell or your Aegis, you can also teleport up to 60 feet to an unoccupied space that you can see. You also leave behind an illusionary image of you that shares your AC and saving throws. A creature that uses an action to examine the image can determine that it is an illusion by succeeding on an Intelligence (Investigation) check against your swordmage spell save DC.</p>
+      <p class="indent">The image lasts until your invisibility ends or if the image is damaged.</p>
+      <p class="indent">You can use this feature a number of times equal to your proficiency bonus. You regain expended uses when you finish a long rest.</p>
+    </description>
+    <sheet usage="{{proficiency}}/Long Rest">
+      <description>When you turn invisible from a spell or your Aegis, you can also teleport up to 60 feet to an unoccupied space that you can see. You also leave behind an illusionary image of you that shares your AC and saving throws. A creature that uses an action to examine the image can determine that it is an illusion by succeeding on an DC {{swordmage:spellcasting:dc}} Intelligence (Investigation) check.</description>
+    </sheet>
+  </element>
+  <element name="Double Trouble" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_DUPLICITIST_DOUBLE_TROUBLE">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_DUPLICITIST_DOUBLE_TROUBLE</requirements>
+    <description>
+      <p>At 20th level, you weave shadows together to create a near copy of yourself. You can use your action to create a shadowy duplicate of yourself as if you had cast the simulacrum spell. The duplicate's AC equals your own AC. It has a shadowy weapon that matches the statistics of the current weapon you're holding. The duplicate and you share the same spell slots. The duplicate cannot use Double Trouble on itself.</p>
+      <p class="indent">The shadowy duplicate fades away after 1 minute or once it falls to 0 hit points. Once you use this feature, you can't use it again until after a long rest.</p>
+    </description>
+    <sheet action="Action" usage="1/Long Rest">
+      <description>You can use your action to create a shadowy duplicate of yourself as if you had cast the simulacrum spell. The duplicate and you share the same spell slots. The shadowy duplicate fades away after 1 minute or once it falls to 0 hit points.</description>
+    </sheet>
+  </element>
+
+  <element name="Aegis Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_DUPLICITIST_AEGIS" />
+  <element name="Aegis Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_DUPLICITIST_AEGIS_SPELLS" />
+  <element name="Cunning Trickery Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_DUPLICITIST_CUNNING_TRICKERY" />
+  <element name="Beguiling Magic Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_DUPLICITIST_BEGUILING_MAGIC" />
+  <element name="Master of Disguise Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_DUPLICITIST_MASTER_OF_DISGUISE" />
+  <element name="Illusive Escape Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_DUPLICITIST_ILLUSIVE_ESCAPE" />
+  <element name="Double Trouble Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_DUPLICITIST_DOUBLE_TROUBLE" />
+
+</elements>

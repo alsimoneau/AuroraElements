@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="10.1.1">
+      <file name="swordmage-meteor-knight.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/archetypes/swordmage-meteor-knight.xml" />
+		</update>
+	</info>
+
+	<element name="Meteor Knight" type="Archetype" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_SWORDMAGE_METEOR_KNIGHT">
+		<supports>Swordmage Tradition</supports>
+		<description>
+			<p>Swordmages that become Meteor Knights study the esoteric magic of dunamancy, specifically concerning the manipulation of gravity. Fascinated by celestial bodies, these swordmages channel the powers of the stars to keep foes in their orbit of destruction.</p>
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_METEOR_KNIGHT_AEGIS" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_METEOR_KNIGHT_AEGIS_SPELLS" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_METEOR_KNIGHT_STUDENT_STARS" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_METEOR_KNIGHT_STAR_FALL" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_METEOR_KNIGHT_SOLAR_FLARE" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_METEOR_KNIGHT_CONTROLLED_DESCENT" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_METEOR_KNIGHT_GRAVITATIONAL_PULL" />
+		</description>
+		<sheet display="false">
+			<description>Swordmages that become Meteor Knights study the esoteric magic of dunamancy, specifically concerning the manipulation of gravity. Fascinated by celestial bodies, these swordmages channel the powers of the stars to keep foes in their orbit of destruction.</description>
+		</sheet>
+		<rules>
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_METEOR_KNIGHT_AEGIS" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_METEOR_KNIGHT_AEGIS_SPELLS" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_METEOR_KNIGHT_STUDENT_STARS" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_METEOR_KNIGHT_STAR_FALL" level="7" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_METEOR_KNIGHT_SOLAR_FLARE" level="11" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_METEOR_KNIGHT_CONTROLLED_DESCENT" level="15" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_METEOR_KNIGHT_GRAVITATIONAL_PULL" level="20" />
+		</rules>
+	</element>
+
+  <element name="Aegis" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_METEOR_KNIGHT_AEGIS">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_METEOR_KNIGHT_AEGIS</requirements>
+    <description>
+      <p>When you take this archetype at 3rd level, you gain the following Aegis option:</p>
+      <p class="indent"><b>Aegis of Gravity.</b> As a bonus action, you can activate this Aegis to infuse yourself with the strength of the stars. For the duration of this Aegis, you gain advantage on Strength (Athletics) and Dexterity (Acrobatics) checks.</p>
+			<p class="indent">Also, when a creature within 30 feet of you that you can see moves, you can use your reaction to force the creature to make a Strength saving throw against your spell save DC. On a failure, the creature's speed drops to 0 until the start of their next turn. This stops any movement they may have been taking. Your Aegis lasts for 1 minute, ending early if you fall unconscious or die.</p>
+    </description>
+    <sheet alt="Aegis of Gravity" action="Bonus Action" usage="1/Short Rest">
+      <description>As a bonus action, you can activate this Aegis to gain advantage on Strength (Athletics) and Dexterity (Acrobatics) checks. when a creature within 30 feet of you that you can see moves, you can use your reaction to force the creature to make a DC {{swordmage:spellcasting:dc}} Strength saving throw. On a failure, the creature's speed drops to 0 until the start of their next turn. Your Aegis lasts for 1 minute, ending early if you fall unconscious or die.</description>
+    </sheet>
+  </element>
+  <element name="Aegis Spells" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_METEOR_KNIGHT_AEGIS_SPELLS">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_METEOR_KNIGHT_AEGIS_SPELLS</requirements>
+    <description>
+      <p>You gain aegis spells at the swordmage level listed below.</p>
+      <h5 class="caption">METEOR KNIGHT SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Swordmage Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3st</td><td><em>magnify gravity</em></td></tr>
+				<tr><td>5rd</td><td><em>immovable object</em></td></tr>
+				<tr><td>9th</td><td><em>melf's minute meteors</em></td></tr>
+				<tr><td>13th</td><td><em>gravity sinkhole</em></td></tr>
+				<tr><td>17th</td><td><em>destructive wave (radiant only)</em></td></tr>
+			</table>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Spell" id="ID_WOTC_EGTW_SPELL_MAGNIFY_GRAVITY" level="3" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_WOTC_EGTW_SPELL_IMMOVABLE_OBJECT" level="5" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_XGTE_SPELL_MELFS_MINUTE_METEORS" level="9" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_WOTC_EGTW_SPELL_GRAVITY_SINKHOLE" level="13" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_PHB_SPELL_DESTRUCTIVE_WAVE" level="17" spellcasting="Swordmage" />
+    </rules>
+  </element>
+  <element name="Student of the Stars" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_METEOR_KNIGHT_STUDENT_STARS">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_METEOR_KNIGHT_STUDENT_STARS</requirements>
+    <description>
+      <p>At 3rd level you manipulate your density to withstand more weight than normal. You gain proficiency with heavy armor and cartographer's tools. You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+    </description>
+    <sheet>
+      <description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+    </sheet>
+    <rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+			<grant type="Proficiency" id="ID_WOTC_PHB_ITEM_TOOL_CARTOGRAPHERS_TOOLS" />
+      <grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+    </rules>
+  </element>
+  <element name="Star Fall" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_METEOR_KNIGHT_STAR_FALL">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_METEOR_KNIGHT_STAR_FALL</requirements>
+    <description>
+      <p>Starting at 7th level, you can teleport towards an area in a fiery explosion reminiscent of a meteor. As a bonus action, you can teleport up to 60 feet to an unoccupied space that you can see. Each creature within 10 feet of the space you teleport to must make a Strength saving throw against your spell save DC. On a failure, a creature takes 2d8 fire damage and is knocked prone. On a success, a creature takes half as much damage and isn't knocked prone.</p>
+			<p class="indent">At 15th level of this class, the damage increases to 4d8. Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+    </description>
+    <sheet action="Bonus Action" usage="1/Short Rest">
+      <description>You can teleport up to 60 feet to an unoccupied space that you can see. Each creature within 10 feet of the space you teleport to must make a DC {{swordmage:spellcasting:dc}} Strength saving throw. A creature takes {{star fall:dice}}d8 fire damage and is knocked prone, or half as much on a success and isn't knocked prone.</description>
+    </sheet>
+    <rules>
+			<stat name="star fall:dice" value="2" />
+			<stat name="star fall:dice" value="2" level="15" />
+    </rules>
+  </element>
+  <element name="Solar Flare" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_METEOR_KNIGHT_SOLAR_FLARE">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_METEOR_KNIGHT_SOLAR_FLARE</requirements>
+    <description>
+      <p>When you reach 11th level, your fiery magic flashes like a star. When you use Star Fall or cast a spell that deals fire or radiant damage, choose one creature damaged by your Star Fall or spell. The creature must succeed on a Constitution saving throw against your swordmage spell save DC or be blinded until the end of your next turn.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus. You regain expended uses when you finish a long rest.</p>
+    </description>
+    <sheet usage="{{Proficiency}}/Long Rest">
+      <description>When you use Star Fall or cast a spell that deals fire or radiant damage, choose one creature damaged by your Star Fall or spell. The creature must succeed on a DC {{swordmage:spellcasting:dc}} Constitution saving throw or be blinded until the end of your next turn.</description>
+    </sheet>
+  </element>
+  <element name="Controlled Descent" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_METEOR_KNIGHT_CONTROLLED_DESCENT">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_METEOR_KNIGHT_CONTROLLED_DESCENT</requirements>
+    <description>
+      <p>At 15th level, you utilize your mastery of dunamancy to escape dangers that would threaten others. When you fall, you take no falling damage and can land on your feet.</p>
+      <p class="indent">Also, when you fall from a height of more than 10 feet, and have a use of your Star Fall feature, you can use Star Fall, except you rapidly fall instead of teleporting. At the end of the fall, the fiery explosion of Star Fall emanates from the space you land in.</p>
+    </description>
+    <sheet>
+      <description>You take no falling damage and can land on your feet. When you fall from a height of more than 10 feet, and have a use of your Star Fall feature, you can use Star Fall, except you rapidly fall instead of teleporting.</description>
+    </sheet>
+  </element>
+  <element name="Gravitational Pull" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_METEOR_KNIGHT_GRAVITATIONAL_PULL">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_METEOR_KNIGHT_GRAVITATIONAL_PULL</requirements>
+    <description>
+      <p>Beginning at 20th level, as a bonus action or as part of your bonus action to activate your Aegis, you create a heavy gravitational pull in a 30 feet aura centered on you for 1 minute. The area inside the aura is difficult terrain for creatures of your choosing. Any creature of your choosing that starts their turn inside the aura must make a Strength saving throw. On a failure, the creature takes 4d6 bludgeoning damage and is pulled to an unoccupied space adjacent to you. On a success, the creature takes half damage and isn't pulled.</p>
+      <p class="indent">Once you use this feature, you can't use it again until after a long rest.</p>
+    </description>
+    <sheet action="Bonus Action (Aegis)" usage="1/Long Rest">
+      <description>You create a heavy gravitational pull in a 30 feet aura centered on you for 1 minute. The area is difficult terrain for creatures of your choosing. Any creature of your choosing that starts their turn inside the aura must make a DC {{swordmage:spellcasting:dc}} Strength saving throw. On a failure, the creature takes 4d6 bludgeoning damage and is pulled to an unoccupied space adjacent to you. On a success, the creature takes half damage and isn't pulled.</description>
+    </sheet>
+  </element>
+
+  <element name="Aegis Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_METEOR_KNIGHT_AEGIS" />
+  <element name="Aegis Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_METEOR_KNIGHT_AEGIS_SPELLS" />
+  <element name="Student of the Stars Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_METEOR_KNIGHT_STUDENT_STARS" />
+  <element name="Star Fall Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_METEOR_KNIGHT_STAR_FALL" />
+  <element name="Solar Flare Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_METEOR_KNIGHT_SOLAR_FLARE" />
+  <element name="Controlled Descent Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_METEOR_KNIGHT_CONTROLLED_DESCENT" />
+  <element name="Gravitational Pull Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_METEOR_KNIGHT_GRAVITATIONAL_PULL" />
+
+</elements>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="10.1.1">
+      <file name="swordmage-blade-summoner.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/archetypes/swordmage-blade-summoner.xml" />
+		</update>
+	</info>
+
+	<element name="Blade Summoner" type="Archetype" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_SWORDMAGE_BLADE_SUMMONER">
+		<supports>Swordmage Tradition</supports>
+		<description>
+			<p>Unlike other swordmages, Blade Summoner specialize in conjuring magical weapons to overwhelm foes in battle. Blade Summoners require intense focus in order to control their conjurations and their own weapon.</p>
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_BLADE_SUMMONER_AEGIS" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_BLADE_SUMMONER_AEGIS_SPELLS" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_BLADE_SUMMONER_CONJURE_STEEL" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_BLADE_SUMMONER_BLADE_PARRY" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_BLADE_SUMMONER_PINNING_SPEAR" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_BLADE_SUMMONER_SWORD_DASH" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_BLADE_SUMMONER_DANCE_OF_STEEL" />
+		</description>
+		<sheet display="false">
+			<description>Unlike other swordmages, Blade Summoner specialize in conjuring magical weapons to overwhelm foes in battle. Blade Summoners require intense focus in order to control their conjurations and their own weapon.</description>
+		</sheet>
+		<rules>
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_BLADE_SUMMONER_AEGIS" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_BLADE_SUMMONER_AEGIS_SPELLS" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_BLADE_SUMMONER_CONJURE_STEEL" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_BLADE_SUMMONER_BLADE_PARRY" level="7" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_BLADE_SUMMONER_PINNING_SPEAR" level="11" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_BLADE_SUMMONER_SWORD_DASH" level="15" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_BLADE_SUMMONER_DANCE_OF_STEEL" level="20" />
+		</rules>
+	</element>
+
+  <element name="Aegis" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_BLADE_SUMMONER_AEGIS">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_BLADE_SUMMONER_AEGIS</requirements>
+    <description>
+      <p>When you take this archetype at 3rd level, you gain the following Aegis option:</p>
+      <p class="indent"><b>Aegis of Summoning.</b> As a bonus action, you create a floating magical weapon called an Aegis Blade within 30 feet of you. When you activate this aegis, you can make a melee attack against a creature within range of the weapon. On a hit, the target takes force damage equal to 1d8 + your ability modifier. The ability modifier you use for your Aegis Blade is the same modifier you use for your Arcane Weapon.</p>
+      <p class="indent">As a bonus action on your turn, you can move your Aegis Blade up to 30 feet and repeat the attack against a creature within range of it.</p>
+      <p class="indent">At 15th level of this class, the damage from your Aegis Blade increases to 2d8.</p>
+      <p class="indent">Your Aegis Blade lasts for 1 minute, ending early if you fall unconscious or die.</p>
+    </description>
+    <sheet alt="Aegis of Summoning" action="Bonus Action" usage="1/Short Rest">
+      <description>As a bonus action, you create a floating magical weapon called an Aegis Blade within 30 feet of you. When you activate this aegis, you can make a melee attack against a creature within range of the weapon. On a hit, the target takes force damage equal to {{aegis:dice}}d8 + your ability modifier. The ability modifier you use for your Aegis Blade is the same modifier you use for your Arcane Weapon. As a bonus action on your turn, you can move your Aegis Blade up to 30 feet and repeat the attack against a creature within range of it. Your Aegis Blade lasts for 1 minute, ending early if you fall unconscious or die.</description>
+    </sheet>
+    <rules>
+      <stat name="aegis:dice" value="1" />
+      <stat name="aegis:dice" value="1" level="15" />
+    </rules>
+  </element>
+  <element name="Aegis Spells" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_BLADE_SUMMONER_AEGIS_SPELLS">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_BLADE_SUMMONER_AEGIS_SPELLS</requirements>
+    <description>
+      <p>You gain aegis spells at the swordmage level listed below.</p>
+      <h5 class="caption">BLADE SUMMONER SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Swordmage Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3st</td><td><em>shield</em></td></tr>
+				<tr><td>5rd</td><td><em>cloud of daggers</em></td></tr>
+				<tr><td>9th</td><td><em>blade storm</em></td></tr>
+				<tr><td>13th</td><td><em>fabricate</em></td></tr>
+				<tr><td>17th</td><td><em>animate objects</em></td></tr>
+			</table>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_SHIELD" level="3" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_PHB_SPELL_CLOUD_OF_DAGGERS" level="5" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_FSM_SPELL_BLADE_STORM" level="9" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_PHB_SPELL_FABRICATE" level="13" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_PHB_SPELL_ANIMATE_OBJECTS" level="17" spellcasting="Swordmage" />
+    </rules>
+  </element>
+  <element name="Conjure Steel" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_BLADE_SUMMONER_CONJURE_STEEL">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_BLADE_SUMMONER_CONJURE_STEEL</requirements>
+    <description>
+      <p>At 3rd level, you can conjure weapons out of magical energy using your knowledge of craftsmanship. You gain proficiency in smith's tools.</p>
+      <p class="indent">You can also perform a ritual over the course of 1 hour, which can be done during a short rest, to create any weapon. The weapon you create cannot be magical.</p>
+      <p class="indent">You can have a number of created weapons up to your proficiency bonus. If you are at your maximum limit of created weapons, and you attempt to create a new weapon, then you must destroy one of your previously created weapons.</p>
+    </description>
+    <sheet>
+      <description>You can perform a ritual over the course of 1 hour, which can be done during a short rest, to create any non-magical weapon (max {{proficiency}}).</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+    </rules>
+  </element>
+  <element name="Blade Parry" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_BLADE_SUMMONER_BLADE_PARRY">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_BLADE_SUMMONER_BLADE_PARRY</requirements>
+    <description>
+      <p>Starting at 7th level, you can use your summoned blade to block attacks. When you see a creature hit with a melee attack and your Aegis Blade is within melee range of the creature, you can use your reaction to add your proficiency bonus to the attacked target's AC for that attack, potentially causing the attack to miss.</p>
+    </description>
+    <sheet action="Reaction">
+      <description>When you see a creature hit with a melee attack and your Aegis Blade is within melee range of the creature, you can use your reaction to add {{proficiency}} to the attacked target's AC for that attack.</description>
+    </sheet>
+  </element>
+  <element name="Pinning Spear" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_BLADE_SUMMONER_PINNING_SPEAR">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_BLADE_SUMMONER_PINNING_SPEAR</requirements>
+    <description>
+      <p>At 11th level, you can quickly summon a weapon to impale a foe. As an action, choose a creature within 30 feet of you. The target must make a Dexterity saving throw against your swordmage spell save DC. The target takes 4d8 piercing damage on a failed save, or half as much damage on a successful one.</p>
+      <p class="indent">Also on a failure, if the target is on solid ground or next to a solid mass (such as a wall or tree), they are restrained. The creature can use its action to make a Strength check against your swordmage spell save DC. If it succeeds, the weapon is removed and vanishes, and the creature is no longer restrained.</p>
+      <p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+    </description>
+    <sheet action="Action" usage="1/Short Rest">
+      <description>As an action, choose a creature within 30 feet of you. The target must make a DC{{swordmage:spellcasting:dc}} Dexterity saving throw. It takes 4d8 piercing damage on a failed save and is restrained if possible, or half as much damage on a successful one. It can use its action to make a DC {{swordmage:spellcasting:dc}} Strength check to free itself, in which case the weapon is removed and vanishes.</description>
+    </sheet>
+  </element>
+  <element name="Sword Dash" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_BLADE_SUMMONER_SWORD_DASH">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_BLADE_SUMMONER_SWORD_DASH</requirements>
+    <description>
+      <p>When you reach 15th level, you can dimensionally follow your summoned weapons. As a bonus action, you can teleport to an unoccupied space adjacent to either your Aegis Blade or a weapon created from your Conjured Steel or Pinning Spear features. If you are teleporting to your Aegis Blade, you can do so as part of the same bonus action to command your Aegis Blade. The teleportation fails if the summoned weapon is more than 30 feet from you.</p>
+    </description>
+    <sheet action="Bonus Action" usage="1/Short Rest">
+      <description>As a bonus action, you can teleport to an unoccupied space adjacent to either your Aegis Blade or a weapon created from your Conjured Steel or Pinning Spear features. If you are teleporting to your Aegis Blade, you can do so as part of the same bonus action to command your Aegis Blade. The teleportation fails if the summoned weapon is more than 30 feet from you.</description>
+    </sheet>
+  </element>
+  <element name="Dance of Steel" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_BLADE_SUMMONER_DANCE_OF_STEEL">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_BLADE_SUMMONER_DANCE_OF_STEEL</requirements>
+    <description>
+      <p>At 20th level, as a bonus action or as part of your bonus action to activate your Aegis, you summon magical weapons that dance around you in a 15-foot aura that lasts for 1 minute. Any creature of your choice that enters the aura for the first time or starts their turn in your aura takes 4d8 slashing damage. Any creature within the aura has half cover to creatures outside of the aura, and the aura's space is difficult terrain to any creature but you.</p>
+    </description>
+    <sheet action="Bonus Action (Aegis)">
+      <description>You summon magical weapons that dance around you in a 15-foot aura that lasts for 1 minute. Any creature of your choice that enters the aura for the first time or starts their turn in your aura takes 4d8 slashing damage. Any creature within the aura has half cover to creatures outside of the aura, and the aura's space is difficult terrain to any creature but you.</description>
+    </sheet>
+  </element>
+
+  <element name="Aegis Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_BLADE_SUMMONER_AEGIS" />
+  <element name="Aegis Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_BLADE_SUMMONER_AEGIS_SPELLS" />
+  <element name="Conjure Steel Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_BLADE_SUMMONER_CONJURE_STEEL" />
+  <element name="Blade Parry Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_BLADE_SUMMONER_BLADE_PARRY" />
+  <element name="Pinning Spear Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_BLADE_SUMMONER_PINNING_SPEAR" />
+  <element name="Sword Dash Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_BLADE_SUMMONER_SWORD_DASH" />
+  <element name="Dance of Steel Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_BLADE_SUMMONER_DANCE_OF_STEEL" />
+
+</elements>

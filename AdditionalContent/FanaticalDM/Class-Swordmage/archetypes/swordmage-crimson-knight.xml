@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="10.1.1">
+      <file name="swordmage-crimson-knight.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/archetypes/swordmage-crimson-knight.xml" />
+		</update>
+	</info>
+
+	<element name="Crimson Knight" type="Archetype" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_SWORDMAGE_CRIMSON_KNIGHT">
+		<supports>Swordmage Tradition</supports>
+		<description>
+			<p>By becoming a Crimson Knight, you focus your studies on necromancy and the terrifying art of blood magic. Crimson Knights are often feared for their dark magic, but not all these swordmages are evil: some use blood magic to combat greater evils, while other Crimson Knights ruthlessly bend others to their will.</p>
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_CRIMSON_KNIGHT_AEGIS" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_CRIMSON_KNIGHT_AEGIS_SPELLS" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_CRIMSON_KNIGHT_BLOOD_SENSE" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_CRIMSON_KNIGHT_SANGUINE_EMPOWERMENT" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_CRIMSON_KNIGHT_VITALITY_TRANSFER" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_CRIMSON_KNIGHT_TIDES_OF_CRIMSON" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_CRIMSON_KNIGHT_CRIMSON_PUPPETEER" />
+		</description>
+		<sheet display="false">
+			<description>By becoming a Crimson Knight, you focus your studies on necromancy and the terrifying art of blood magic. Crimson Knights are often feared for their dark magic, but not all these swordmages are evil: some use blood magic to combat greater evils, while other Crimson Knights ruthlessly bend others to their will.</description>
+		</sheet>
+		<rules>
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_CRIMSON_KNIGHT_AEGIS" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_CRIMSON_KNIGHT_AEGIS_SPELLS" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_CRIMSON_KNIGHT_BLOOD_SENSE" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_CRIMSON_KNIGHT_SANGUINE_EMPOWERMENT" level="7" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_CRIMSON_KNIGHT_VITALITY_TRANSFER" level="11" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_CRIMSON_KNIGHT_TIDES_OF_CRIMSON" level="15" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_CRIMSON_KNIGHT_CRIMSON_PUPPETEER" level="20" />
+		</rules>
+	</element>
+
+  <element name="Aegis" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_CRIMSON_KNIGHT_AEGIS">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_CRIMSON_KNIGHT_AEGIS</requirements>
+    <description>
+      <p>When you take this archetype at 3rd level, you gain the following Aegis option:</p>
+      <p class="indent"><b>Aegis of Blood.</b> As a bonus action you can activate this Aegis to temporarily seize control of others through their blood. When you see a creature within 30 feet of you make an attack roll or ability check, you can use your reaction to impose disadvantage on the roll. This feature does not work on undead or constructs.</p>
+      <p class="indent">Your Aegis Blade lasts for 1 minute, ending early if you fall unconscious or die.</p>
+    </description>
+    <sheet alt="Aegis of Blood" action="Bonus Action" usage="1/Short Rest">
+      <description>As a bonus action you can activate this Aegis to temporarily seize control of others through their blood. When you see a creature within 30 feet of you make an attack roll or ability check, you can use your reaction to impose disadvantage on the roll. This feature does not work on undead or constructs. Your Aegis Blade lasts for 1 minute, ending early if you fall unconscious or die.</description>
+    </sheet>
+  </element>
+  <element name="Aegis Spells" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_CRIMSON_KNIGHT_AEGIS_SPELLS">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_CRIMSON_KNIGHT_AEGIS_SPELLS</requirements>
+    <description>
+      <p>You gain aegis spells at the swordmage level listed below.</p>
+      <h5 class="caption">CRIMSON KNIGHT SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Swordmage Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3st</td><td><em>false life</em></td></tr>
+				<tr><td>5rd</td><td><em>ray of enfeeblement</em></td></tr>
+				<tr><td>9th</td><td><em>vampiric touch</em></td></tr>
+				<tr><td>13th</td><td><em>festering blade</em></td></tr>
+				<tr><td>17th</td><td><em>enervation</em></td></tr>
+			</table>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" level="3" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" level="5" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_PHB_SPELL_VAMPIRIC_TOUCH" level="9" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_FSM_SPELL_FESTERING_BLADE" level="13" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_XGTE_SPELL_ENERVATION" level="17" spellcasting="Swordmage" />
+    </rules>
+  </element>
+  <element name="Blood Sense" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_CRIMSON_KNIGHT_BLOOD_SENSE">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_CRIMSON_KNIGHT_BLOOD_SENSE</requirements>
+    <description>
+      <p>At 3rd level, you can feel the flowing blood of nearby beings. As an action, you can open your awareness to detect living creatures. Until the end of your next turn, you know the location of any creature within 60 feet of you that is not behind total cover. You also know if a sensed creature is below its hit point maximum, or if the creature is diseased or poisoned. This feature does not work on undead or constructs.</p>
+      <p class="indent">You can use this feature a number of times equal to your proficiency bonus. When you finish a long rest, you regain all expended uses.</p>
+    </description>
+    <sheet action="Action" usage="{{proficiency}}/Long Rest">
+      <description>As an action, until the end of your next turn, you know the location of any creature within 60 feet of you that is not behind total cover. You also know if a sensed creature is below its hit point maximum, or if the creature is diseased or poisoned. Does not work on undead or constructs.</description>
+    </sheet>
+  </element>
+  <element name="Sanguine Empowerment" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_CRIMSON_KNIGHT_SANGUINE_EMPOWERMENT">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_CRIMSON_KNIGHT_SANGUINE_EMPOWERMENT</requirements>
+    <description>
+      <p>Starting at 7th level, you use blood magic to boost your own life force. When you regain hit points or gain temeporary hit points, you increase the amount of points gained by your proficiency bonus.</p>
+    </description>
+    <sheet>
+      <description>When you regain hit points or gain temeporary hit points, you increase the amount of points gained by {{proficiency}}.</description>
+    </sheet>
+  </element>
+  <element name="Vitality Transfer" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_CRIMSON_KNIGHT_VITALITY_TRANSFER">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_CRIMSON_KNIGHT_VITALITY_TRANSFER</requirements>
+    <description>
+      <p>At 11th level, you can heal your wounds through magic or sacrifice vitality to power your magic. As a bonus action, you can use one of the following options:</p>
+      <ul>
+        <li><b>Convert Spell Slots:</b> You can expend a number of spell slots to regain hit points. You regain hit points equal to 1d10 per the combined level of the spell slots expended.</li>
+        <li><b>Convert Hit Dice:</b> You can expend a number of hit dice up to half of your maximum hit dice (rounding down). You recover spell slots with a combined level equal to the number of hit dice expended.</li>
+      </ul>
+      <p class="indent">Once you use this either of these options, you can't use either again until you finish a long rest.</p>
+    </description>
+    <sheet action="Bonus Action" usage="1/Long Rest">
+      <description>You can expend a number of spell slots to regain hit points. You regain hit points equal to 1d10 per the combined level of the spell slots expended, or you can expend a number of hit dice up to half of your maximum hit dice (rounding down). You recover spell slots with a combined level equal to the number of hit dice expended.</description>
+    </sheet>
+  </element>
+  <element name="Tides of Crimson" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_CRIMSON_KNIGHT_TIDES_OF_CRIMSON">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_CRIMSON_KNIGHT_TIDES_OF_CRIMSON</requirements>
+    <description>
+      <p>When you reach 15th level, you unleash a burst of life draining magic to steal the vitality of nearby foes. As an action, choose any number of creatures within 20 feet of you. A chosen creature must succeed on a Constitution saving throw against your spell save DC. A creature takes 4d8 necrotic damage on a failure, and half as much on a success. You regain hit points equal to half the damage a single creature takes from this feature.</p>
+      <p class="indent">This feature does not work on undead or constructs. Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+    </description>
+    <sheet action="Action" usage="1/Short Rest">
+      <description>As an action, choose any number of creatures within 20 feet of you. They must succeed on a DC {{swordmage:spellcasting:dc}} Constitution saving throw. They take 4d8 necrotic damage on a failure, and half as much on a success. You regain hit points equal to half the damage a single creature takes from this feature. Does not work on undead or constructs.</description>
+    </sheet>
+  </element>
+  <element name="Crimson Puppeteer" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_CRIMSON_KNIGHT_CRIMSON_PUPPETEER">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_CRIMSON_KNIGHT_CRIMSON_PUPPETEER</requirements>
+    <description>
+      <p>Beginning at 20th level, as an action, you can manipulate blood to seize control of a creature that you can see within 30 feet of you. The creature must succeed on a Constitution saving throw or be controlled by you for 1 minute.</p>
+      <p class="indent">While the target is controlled, it is incapacitated. As a bonus action on your turn, you can direct the target to move up to 30 feet and make a melee attack. The target uses its attack modifier for the attack. At the end of each of its turns, the target can make another Constitution saving throw. On a success, your control ends on the target.</p>
+      <p class="indent">Once you use this feature, you can't use it again until after a long rest.</p>
+    </description>
+    <sheet action="Action" usage="1/Long Rest">
+      <description>A creature whitin 30 feet of you must succeed on a DC {{swordmage:spellcasting:dc}} Constitution saving throw or be controlled by you for 1 minute. While the target is controlled, it is incapacitated. As a bonus action on your turn, you can direct the target to move up to 30 feet and make a melee attack. It uses its attack modifier for the attack. At the end of each of its turns, it can make another Constitution saving throw. On a success, your control ends on the target.</description>
+    </sheet>
+  </element>
+
+  <element name="Aegis Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_CRIMSON_KNIGHT_AEGIS" />
+  <element name="Aegis Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_CRIMSON_KNIGHT_AEGIS_SPELLS" />
+  <element name="Blood Sense Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_CRIMSON_KNIGHT_BLOOD_SENSE" />
+  <element name="Sanguine Empowerment Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_CRIMSON_KNIGHT_SANGUINE_EMPOWERMENT" />
+  <element name="Vitality Transfer Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_CRIMSON_KNIGHT_VITALITY_TRANSFER" />
+  <element name="Tides of Crimson Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_CRIMSON_KNIGHT_TIDES_OF_CRIMSON" />
+  <element name="Crimson Puppeteer Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_CRIMSON_KNIGHT_CRIMSON_PUPPETEER" />
+
+</elements>

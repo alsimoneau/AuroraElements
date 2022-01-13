@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="10.1.1">
+      <file name="swordmage-swordscholar.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/archetypes/swordmage-swordscholar.xml" />
+		</update>
+	</info>
+
+	<element name="Swordscholar" type="Archetype" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_SWORDMAGE_SWORDSCHOLAR">
+		<supports>Swordmage Tradition</supports>
+		<description>
+			<p>Swordmages that become Swordscholars refrain from specializing in a type of magic, but instead prefer a more holistic approach. Their rigorous studies reward them with magical secrets unknown to other swordmages.</p>
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_SWORDSCHOLAR_AEGIS" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_SWORDSCHOLAR_AEGIS_SPELLS" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_SWORDSCHOLAR_STUDIOUS_LEARNER" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_SWORDSCHOLAR_RITUALIST" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_SWORDSCHOLAR_SCHOLARLY_RECALL" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_SWORDSCHOLAR_SPELL_ECHO" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_SWORDSCHOLAR_MAGICAL_THESIS" />
+		</description>
+		<sheet display="false">
+			<description>Swordmages that become Swordscholars refrain from specializing in a type of magic, but instead prefer a more holistic approach. Their rigorous studies reward them with magical secrets unknown to other swordmages.</description>
+		</sheet>
+		<rules>
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_SWORDSCHOLAR_AEGIS" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_SWORDSCHOLAR_AEGIS_SPELLS" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_SWORDSCHOLAR_STUDIOUS_LEARNER" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_SWORDSCHOLAR_RITUALIST" level="7" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_SWORDSCHOLAR_SCHOLARLY_RECALL" level="11" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_SWORDSCHOLAR_SPELL_ECHO" level="15" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_SWORDSCHOLAR_MAGICAL_THESIS" level="20" />
+		</rules>
+	</element>
+
+  <element name="Aegis" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_SWORDSCHOLAR_AEGIS">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_SWORDSCHOLAR_AEGIS</requirements>
+    <description>
+      <p>When you take this archetype at 3rd level, you gain the following Aegis option:</p>
+      <p class="indent"><b>Aegis of Spellcraft.</b> As a bonus action, you can activate this Aegis to empower nearby magic. When you cast a spell that deals damage, you can add your proficiency bonus to one damage roll of that spell. If a creature within 30 feet of you casts a spell that deals damage, you can use your reaction to add the same bonus to their spell.</p>
+      <p class="indent">Your Aegis lasts for 1 minute, ending early if you fall unconscious or die.</p>
+    </description>
+    <sheet alt="Aegis of Spellcraft" action="Bonus Action" usage="1/Short Rest">
+      <description>As a bonus action, you can activate this Aegis to empower nearby magic. When you cast a spell that deals damage, you can add your proficiency bonus to one damage roll of that spell. If a creature within 30 feet of you casts a spell that deals damage, you can use your reaction to add the same bonus to their spell. Your Aegis lasts for 1 minute, ending early if you fall unconscious or die.</description>
+    </sheet>
+  </element>
+  <element name="Aegis Spells" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_SWORDSCHOLAR_AEGIS_SPELLS">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_SWORDSCHOLAR_AEGIS_SPELLS</requirements>
+    <description>
+      <p>At 3rd level, you can learn a 1st level spell from the wizard class. The chosen spell counts as a swordmage spell for you. At higher levels of this class, you learn additional wizard spells at 5th, 9th, 13th, and 17th level as shown in the Swordscholar Spells table.</p>
+      <h5 class="caption">SWORDSCHOLAR SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Swordmage Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3st</td><td>a 1st level wizard spell of your choice</td></tr>
+				<tr><td>5rd</td><td>a 2nd level wizard spell of your choice</td></tr>
+				<tr><td>9th</td><td>a 3rd level wizard spell of your choice</td></tr>
+				<tr><td>13th</td><td>a 4th level wizard spell of your choice</td></tr>
+				<tr><td>17th</td><td>a 5th level wizard spell of your choice</td></tr>
+			</table>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Spell" name="1st level Spell (Aegis Spells)" supports="1,Wizard" number="1" spellcasting="Swordmage" />
+      <select type="Spell" name="2nd level Spell (Aegis Spells)" supports="2,Wizard" number="1" spellcasting="Swordmage" />
+      <select type="Spell" name="3rd level Spell (Aegis Spells)" supports="3,Wizard" number="1" spellcasting="Swordmage" />
+      <select type="Spell" name="4th level Spell (Aegis Spells)" supports="4,Wizard" number="1" spellcasting="Swordmage" />
+      <select type="Spell" name="5th level Spell (Aegis Spells)" supports="5,Wizard" number="1" spellcasting="Swordmage" />
+    </rules>
+  </element>
+  <element name="Studious Learner" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_SWORDSCHOLAR_STUDIOUS_LEARNER">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_SWORDSCHOLAR_STUDIOUS_LEARNER</requirements>
+    <description>
+      <p>Starting at 3rd level, you have picked up useful tidbits of knowledge. You learn a cantrip from the wizard class and either a language or tool proficiency of your choice.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Spell" name="Cantrip (Studious Learner)" supports="0,Wizard" number="1" spellcasting="Swordmage" />
+      <select type="Archetype Feature" name="Studious Learner" supports="Studious Learner" />
+    </rules>
+  </element>
+  <element name="Language" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_SWORDSCHOLAR_STUDIOUS_LEARNER_LANGUAGE">
+    <supports>Studious Learner</supports>
+    <rules>
+      <select type="Language" name="Language (Studious Learner)" />
+    </rules>
+  </element>
+  <element name="Tool Proficiency" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_SWORDSCHOLAR_STUDIOUS_LEARNER_TOOL">
+    <supports>Studious Learner</supports>
+    <rules>
+      <select type="Proficiency" name="Tool Proficiency (Studious Learner)" supports="Tool" />
+    </rules>
+  </element>
+  <element name="Ritualist" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_SWORDSCHOLAR_RITUALIST">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_SWORDSCHOLAR_RITUALIST</requirements>
+    <description>
+      <p>At 7th level, you have delved deeper into esoteric studies and have learned to cast spells as rituals. You gain a ritual book, which contains the spells you can cast as a ritual as long as you have the book on hand. Your ritual book starts off with two 1st level spells and one 2nd level spell with the ritual tag from the wizard class. If you already have a ritual book, you can add those spells to your book.</p>
+      <p class="indent">If you come across a spell in written form, such as a magical scroll or a wizard's spellbook, you might be able to add it to your ritual book. The spell must be on the wizard's spell list, the spell's level must be of a level you can cast, and it must have the ritual tag. The process of copying the spell into your ritual books takes 2 hours per level of the spells, and costs 50 gp per level of the spell. This cost represents material components spent on practicing the spell, as well as the fine inks you must use to record it.</p>
+    </description>
+    <sheet>
+      <description>You have learned to cast spells as rituals. You gain a ritual book, which contains the spells you can cast as a ritual as long as you have the book on hand.</description>
+    </sheet>
+    <rules>
+      <select type="Spell" name="1st-level Spell (Ritualist)" supports="Ritual,1,Wizard" number="2" />
+      <select type="Spell" name="2st-level Spell (Ritualist)" supports="Ritual,2,Wizard" number="1" />
+    </rules>
+  </element>
+  <element name="Scholarly Recall" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_SWORDSCHOLAR_SCHOLARLY_RECALL">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_SWORDSCHOLAR_SCHOLARLY_RECALL</requirements>
+    <description>
+      <p>Starting at 11th level, you can quickly remember a spell you've read about that would help in your situation. As a bonus action, you gain the ability to cast one spell of your choice from the swordmage's spell list. The spell must be of a level for which you have spell slots, and you follow the normal rules for casting it, including expending a spell slot. The ability to cast the spell vanishes from your mind when you cast it or when the current turn ends.</p>
+      <p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
+    </description>
+    <sheet action="Bonus Action" usage="1/Long Rest">
+      <description>As a bonus action, you gain the ability to cast one spell of your choice from the swordmage's spell list. The spell must be of a level for which you have spell slots, and you follow the normal rules for casting it, including expending a spell slot. The ability to cast the spell vanishes from your mind when you cast it or when the current turn ends.</description>
+    </sheet>
+  </element>
+  <element name="Spell Echo" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_SWORDSCHOLAR_SPELL_ECHO">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_SWORDSCHOLAR_SPELL_ECHO</requirements>
+    <description>
+      <p>When you reach 15th level, after casting a spell, you retain an echo of the spell's energy to empower you in combat. When you cast a spell of 1st level or higher, you can gain one of the following effects depending on the spell's school that last until the end of your next turn:</p>
+      <table>
+				<thead>
+					<tr><td>Spell School</td><td class="left">Spell Echo</td></tr>
+				</thead>
+				<tr><td>Abjuration</td><td class="left">your AC and saving throws gain a bonus equal to the spell level</td></tr>
+				<tr><td>Conjuration</td><td class="left">you can immediately teleport up to 15 feet per spell level to an unoccupied space that you can see</td></tr>
+				<tr><td>Divination</td><td class="left">you have advantage on all attack rolls</td></tr>
+				<tr><td>Enchantment</td><td class="left">all creatures of your choice within 15 feet of you must make a Wisdom saving throw against your swordmage spellcasting DC or be frightened</td></tr>
+				<tr><td>Evocation</td><td class="left">your next weapon attack that hits deals additional force damage equal to 1d10 per spell level</td></tr>
+				<tr><td>Illusion</td><td class="left">your form blurs and creatures have disadvantage on attack rolls against you</td></tr>
+				<tr><td>Necromancy</td><td class="left">when you damage a creature with a weapon attack, you regain hit points equal to half the amount of damage dealt</td></tr>
+				<tr><td>Transmuttation</td><td class="left">you gain an additional action each turn that can be used only to take the Attack (one weapon attack only), Dash, or Disengage action</td></tr>
+			</table>
+      <p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+    </description>
+    <sheet usage="1/Short Rest">
+      <description>When you cast a spell of 1st level or higher, you can gain one of the following effects depending on the spell's school that last until the end of your next turn: <b>Abjuration:</b> your AC and saving throws gain a bonus equal to the spell level. <b>Conjuration:</b> you can immediately teleport up to 15 feet per spell level to an unoccupied space that you can see. <b>Divination:</b> you have advantage on all attack rolls. <b>Enchantment:</b> all creatures of your choice within 15 feet of you must make a Wisdom saving throw against your swordmage spellcasting DC or be frightened. <b>Evocation:</b> your next weapon attack that hits deals additional force damage equal to 1d10 per spell level. <b>Illusion:</b> your form blurs and creatures have disadvantage on attack rolls against you. <b>Necromancy:</b> when you damage a creature with a weapon attack, you regain hit points equal to half the amount of damage dealt. <b>Transmuttation:</b> you gain an additional action each turn that can be used only to take the Attack (one weapon attack only), Dash, or Disengage action.</description>
+    </sheet>
+  </element>
+  <element name="Magical Thesis" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_SWORDSCHOLAR_MAGICAL_THESIS">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_SWORDSCHOLAR_MAGICAL_THESIS</requirements>
+    <description>
+      <p>At 20th level, your magical studies reach a culmination as you study powerful magic beyond your peers. You learn a 6th level spell from the wizard class. The spell counts as a swordmage spell for you. You can cast the chosen spell once without expending a spell slot. You must finish a long rest before you can do so again.</p>
+    </description>
+    <sheet>
+      <description>You learn a 6th level spell from the wizard class. The spell counts as a swordmage spell for you. You can cast the chosen spell once without expending a spell slot.</description>
+    </sheet>
+    <rules>
+      <select type="Spell" name="6th level Spell (Magical Thesis)" supports="6,Wizard" number="1" />
+    </rules>
+  </element>
+
+  <element name="Aegis Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_SWORDSCHOLAR_AEGIS" />
+  <element name="Aegis Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_SWORDSCHOLAR_AEGIS_SPELLS" />
+  <element name="Studious Learner Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_SWORDSCHOLAR_STUDIOUS_LEARNER" />
+  <element name="Ritualist Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_SWORDSCHOLAR_RITUALIST" />
+  <element name="Scholarly Recall Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_SWORDSCHOLAR_SCHOLARLY_RECALL" />
+  <element name="Spell Echo Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_SWORDSCHOLAR_SPELL_ECHO" />
+  <element name="Magical Thesis Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_SWORDSCHOLAR_MAGICAL_THESIS" />
+
+</elements>

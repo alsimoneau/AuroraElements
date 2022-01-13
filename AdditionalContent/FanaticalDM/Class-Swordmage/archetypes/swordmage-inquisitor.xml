@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="10.1.1">
+      <file name="swordmage-inquisitor.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/archetypes/swordmage-inquisitor.xml" />
+		</update>
+	</info>
+
+	<element name="Inquisitor" type="Archetype" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_SWORDMAGE_INQUISITOR">
+		<supports>Swordmage Tradition</supports>
+		<description>
+			<p>The inquisitor takes on the dangerous role of hunting and slaying evil arcane entities, be they wielders of dark magic or powerful otherworldly creatures. Inquisitors are equipped with ways to track, attack, and guard themselves from menacing foes.</p>
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_INQUISITOR_AEGIS" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_INQUISITOR_AEGIS_SPELLS" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_INQUISITOR_EYES_INQUISITOR" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_INQUISITOR_INVESTIGATORS_INSIGHT" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_INQUISITOR_DISCERN_WEAKNESS" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_INQUISITOR_SPELL_CATCHER" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_INQUISITOR_DISRUPT_MAGIC" />
+		</description>
+		<sheet display="false">
+			<description>The inquisitor takes on the dangerous role of hunting and slaying evil arcane entities, be they wielders of dark magic or powerful otherworldly creatures. Inquisitors are equipped with ways to track, attack, and guard themselves from menacing foes.</description>
+		</sheet>
+		<rules>
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_INQUISITOR_AEGIS" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_INQUISITOR_AEGIS_SPELLS" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_INQUISITOR_EYES_INQUISITOR" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_INQUISITOR_INVESTIGATORS_INSIGHT" level="7" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_INQUISITOR_DISCERN_WEAKNESS" level="11" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_INQUISITOR_SPELL_CATCHER" level="15" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_INQUISITOR_DISRUPT_MAGIC" level="20" />
+		</rules>
+	</element>
+
+  <element name="Aegis" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_INQUISITOR_AEGIS">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_INQUISITOR_AEGIS</requirements>
+    <description>
+      <p>When you take this archetype at 3rd level, you gain the following Aegis option:</p>
+      <p class="indent"><b>Aegis of the Hunter.</b> As a bonus action, you can activate this Aegis and then mark a creature within 30 feet of you that you can see. Your melee weapon attacks against the marked target deal an additional 1d6 force damage.</p>
+			<p class="indent">If your marked target uses a spell or magical effect against you that forces you to make a saving throw, you can use your reaction to give yourself advantage on the saving throw.</p>
+			<p class="indent">As a bonus action, you can change the marked target to another creature within 30 feet of you that you can see.</p>
+			<p class="indent">At 15th level of this class, the additional damage increases to 1d8. Your Aegis lasts for 1 minute, ending early if you fall unconscious or die.</p>
+    </description>
+    <sheet alt="Aegis of the Hunter" action="Bonus Action" usage="1/Short Rest">
+      <description>As a bonus action, you can activate this Aegis and then mark a creature within 30 feet of you that you can see. Your melee weapon attacks against the marked target deal an additional 1d{{aegis:dice}} force damage. If your marked target uses a spell or magical effect against you that forces you to make a saving throw, you can use your reaction to give yourself advantage on the saving throw. If your marked target uses a spell or magical effect against you that forces you to make a saving throw, you can use your reaction to give yourself advantage on the saving throw. Your Aegis Blade lasts for 1 minute, ending early if you fall unconscious or die.</description>
+    </sheet>
+		<rules>
+			<stat name="aegis:dice" value="6" />
+			<stat name="aegis:dice" value="2" level="15" />
+		</rules>
+  </element>
+  <element name="Aegis Spells" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_INQUISITOR_AEGIS_SPELLS">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_INQUISITOR_AEGIS_SPELLS</requirements>
+    <description>
+      <p>You gain aegis spells at the swordmage level listed below.</p>
+      <h5 class="caption">INQUISITOR SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Swordmage Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3st</td><td><em>protection from evil and good</em></td></tr>
+				<tr><td>5rd</td><td><em>detect toughts</em></td></tr>
+				<tr><td>9th</td><td><em>dispel magic</em></td></tr>
+				<tr><td>13th</td><td><em>banishment</em></td></tr>
+				<tr><td>17th</td><td><em>scrying</em></td></tr>
+			</table>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" level="3" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" level="5" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_PHB_SPELL_DISPEL_MAGIC" level="9" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" level="13" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_PHB_SPELL_SCRYING" level="17" spellcasting="Swordmage" />
+    </rules>
+  </element>
+  <element name="Eyes of the Inquisitor" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_INQUISITOR_EYES_INQUISITOR">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_INQUISITOR_EYES_INQUISITOR</requirements>
+    <description>
+      <p>At 3rd level, you can cast the detect magic spell without expending a spell slot.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus. When you finish a long rest, you regain all expended uses.</p>
+    </description>
+    <sheet usage="{{proficiency}}/Long Rest">
+      <description>You can cast the detect magic spell without expending a spell slot.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" />
+    </rules>
+  </element>
+  <element name="Investigator's Insight" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_INQUISITOR_INVESTIGATORS_INSIGHT">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_INQUISITOR_INVESTIGATORS_INSIGHT</requirements>
+    <description>
+      <p>Beginning at 7th level, your experience of hunting dark magics have sharpened your intuition and mind. You gain proficiency in the Insight skill if you don't already have it, and your proficiency bonus is doubled for any Wisdom (Insight) check.</p>
+			<p class="indent">You also gain proficiency in Wisdom saving throws. If you already have this proficiency, you instead gain proficiency in Charisma saving throws</p>
+    </description>
+    <sheet>
+      <description>You gain expertise in Insight checks and in Wisdom saving throws</description>
+    </sheet>
+    <rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+      <grant type="Class Feature" id="ID_EXPERTISE_SKILL_INSIGHT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+    </rules>
+  </element>
+  <element name="Discern Weakness" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_INQUISITOR_DISCERN_WEAKNESS">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_INQUISITOR_DISCERN_WEAKNESS</requirements>
+    <description>
+      <p>At 11th level, you can use your knowledge of supernatural entities to quickly deduce a foe's vulnerabilities. As a bonus action, choose a creature within 30 feet of you. Make an Intelligence (Investigation) or Wisdom (Insight) check contested by the target's Charisma (Deception) check. On a success, you learn whether the creature has any damage immunities, resistances, or vulnerabilities and what they are. You also have advantage on attack rolls against the target until the end of your turn.</p>
+			<p class="indent">Once you use this feature successfully on a creature, you can't use it again on them for one hour.</p>
+    </description>
+    <sheet action="Bonus Action">
+      <description>Make an Intelligence (Investigation) or Wisdom (Insight) check versus a target's Charisma (Deception) within 30 feet of you. On a success, you learn whether the creature has any damage immunities, resistances, or vulnerabilities and what they are and have advantage on attack rolls against the target until the end of your turn.</description>
+    </sheet>
+  </element>
+  <element name="Spell Catcher" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_INQUISITOR_SPELL_CATCHER">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_INQUISITOR_SPELL_CATCHER</requirements>
+    <description>
+      <p>Starting at 15th level, you redirect harmful magic to invigorate yourself. You gain resistance to damage from spells.</p>
+      <p class="indent">When you use your reaction from Aegis of the Hunter and succeed on the saving throw, you siphon off some of the magic. You gain temporary hit points equal to 1d8 plus your Intelligence modifier (a minimum of 1).</p>
+    </description>
+    <sheet>
+      <description>You gain resistance to damage from spells. When you suceed on the saving throw of your Aegis reaction, you gain 1d8+{{spell catcher:temphp}} temporary hit points.</description>
+    </sheet>
+		<rules>
+			<stat name="spell catcher:temphp" value="1" bonus="bonus" />
+			<stat name="spell catcher:temphp" value="intelligence:modifier" bonus="bonus" />
+		</rules>
+  </element>
+  <element name="Disrupt Magic" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_INQUISITOR_DISRUPT_MAGIC">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_INQUISITOR_DISRUPT_MAGIC</requirements>
+    <description>
+      <p>At 20th level, as a bonus action or as part of your bonus action to activate your Aegis, you create a 30 feet aura of dampening energy centered on you for 1 minute. When a creature within your aura casts a spell or uses a magical effect, you can choose to disrupt their magic. The creature must make a Constitution saving throw against your swordmage spell save DC. On a failure, the creature's spell or magical effect fails and has no effect.</p>
+      <p class="indent">Once you use this feature, you can't use it again until after a long rest.</p>
+    </description>
+    <sheet action="Bonus Action (Aegis)" usage="1/Long Rest">
+      <description>You create a 30 feet aura of dampening energy centered on you for 1 minute. When a creature within your aura casts a spell or uses a magical effect, you can choose have them make a DC {{swordmage:spellcasting:dc}} Constitution saving throw. On a failure, the creature's spell or magical effect fails and has no effect.</description>
+    </sheet>
+  </element>
+
+  <element name="Aegis Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_INQUISITOR_AEGIS" />
+  <element name="Aegis Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_INQUISITOR_AEGIS_SPELLS" />
+  <element name="Eyes of the Inquisitor Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_INQUISITOR_EYES_INQUISITOR" />
+  <element name="Investigator's Insight Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_INQUISITOR_INVESTIGATORS_INSIGHT" />
+  <element name="Discern Weakness Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_INQUISITOR_DISCERN_WEAKNESS" />
+  <element name="Spell Catcher Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_INQUISITOR_SPELL_CATCHER" />
+  <element name="Disrupt Magic Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_INQUISITOR_DISRUPT_MAGIC" />
+
+</elements>

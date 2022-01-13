@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+  <info>
+    <update version="1.1">
+      <file name="FanaticalDM.index" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM.index" />
+    </update>
+  </info>
+  <files>
+    <file name="Class-Swordmage.index" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage.index" />
+  </files>
+</index>

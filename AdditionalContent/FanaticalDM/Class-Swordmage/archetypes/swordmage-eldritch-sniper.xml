@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="10.1.1">
+      <file name="swordmage-eldritch-sniper.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/archetypes/swordmage-eldritch-sniper.xml" />
+		</update>
+	</info>
+
+	<element name="Eldritch Sniper" type="Archetype" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_SWORDMAGE_ELDRITCH_SNIPER">
+		<supports>Swordmage Tradition</supports>
+		<description>
+			<p>A few, rare Swordmages forgo close quarter combat to instead focus on engaging their enemies from afar. Eldritch Snipers prefer to channel their battle magic through bows, crossbows, or anything that can be thrown.</p>
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELDRITCH_SNIPER_AEGIS" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELDRITCH_SNIPER_AEGIS_SPELLS" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELDRITCH_SNIPER_ELDRITCH_READINESS" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELDRITCH_SNIPER_ELEMENTAL_ARROW" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELDRITCH_SNIPER_SNIPERS_SCOUT" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELDRITCH_SNIPER_REVEALING_SHOT" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELDRITCH_SNIPER_DEATH_ARROW" />
+		</description>
+		<sheet display="false">
+			<description>A few, rare Swordmages forgo close quarter combat to instead focus on engaging their enemies from afar. Eldritch Snipers prefer to channel their battle magic through bows, crossbows, or anything that can be thrown.</description>
+		</sheet>
+		<rules>
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELDRITCH_SNIPER_AEGIS" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELDRITCH_SNIPER_AEGIS_SPELLS" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELDRITCH_SNIPER_ELDRITCH_READINESS" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELDRITCH_SNIPER_ELEMENTAL_ARROW" level="7" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELDRITCH_SNIPER_SNIPERS_SCOUT" level="11" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELDRITCH_SNIPER_REVEALING_SHOT" level="15" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELDRITCH_SNIPER_DEATH_ARROW" level="20" />
+		</rules>
+	</element>
+
+  <element name="Aegis" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELDRITCH_SNIPER_AEGIS">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELDRITCH_SNIPER_AEGIS</requirements>
+    <description>
+      <p>When you take this archetype at 3rd level, you gain the following Aegis option:</p>
+      <p class="indent"><b>Aegis of the Sniper.</b> As a bonus action, you can activate this Aegis to magically enhance your aim, and you gain advantage on your next ranged attack roll before the end of your turn. If the attack hits, it deals an additional 1d6 force damage. While this Aegis is active, you can use your bonus action to gain the same benefit.</p>
+      <p class="indent">At 15th level of this class, the additional damage increases to 2d6. Your Aegis Blade lasts for 1 minute, ending early if you fall unconscious or die.</p>
+    </description>
+    <sheet alt="Aegis of the Sniper" action="Bonus Action" usage="1/Short Rest">
+      <description>As a bonus action, you can activate this Aegis to magically enhance your aim, and you gain advantage on your next ranged attack roll before the end of your turn. If the attack hits, it deals an additional {{aegis:dice}}d6 force damage. While this Aegis is active, you can use your bonus action to gain the same benefit. Your Aegis Blade lasts for 1 minute, ending early if you fall unconscious or die.</description>
+    </sheet>
+    <rules>
+      <stat name="aegis:dice" value="1" />
+      <stat name="aegis:dice" value="1" level="15"/>
+    </rules>
+  </element>
+  <element name="Aegis Spells" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELDRITCH_SNIPER_AEGIS_SPELLS">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELDRITCH_SNIPER_AEGIS_SPELLS</requirements>
+    <description>
+      <p>You gain aegis spells at the swordmage level listed below.</p>
+      <h5 class="caption">ELDRITCH SNIPER SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Swordmage Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3st</td><td><em>hail of thorns</em></td></tr>
+				<tr><td>5rd</td><td><em>melf's acid arrow</em></td></tr>
+				<tr><td>9th</td><td><em>conjure barrage</em></td></tr>
+				<tr><td>13th</td><td><em>arcane eye</em></td></tr>
+				<tr><td>17th</td><td><em>conjure volley</em></td></tr>
+			</table>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_HAIL_OF_THORNS" level="3" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_PHB_SPELL_MELFS_ACID_ARROW" level="5" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_PHB_SPELL_CONJURE_BARRAGE" level="9" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_PHB_SPELL_ARCANE_EYE" level="13" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_PHB_SPELL_CONJURE_VOLLEY" level="17" spellcasting="Swordmage" />
+    </rules>
+  </element>
+  <element name="Eldritch Readiness" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELDRITCH_SNIPER_ELDRITCH_READINESS">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELDRITCH_SNIPER_ELDRITCH_READINESS</requirements>
+    <description>
+      <p>At 3rd level, you are never left empty handed in battle. If your Arcane Weapon requires ammunition and you are out of ammunition, then mundane ammunition is magically created as needed. If your Arcane Weapon has the Thrown property, then it magically returns to your hand after you throw it.</p>
+      <p class="indent">You also gain proficiency in woodcarver tools and your choice of the Perception or Stealth skill.</p>
+    </description>
+    <sheet>
+      <description>If your Arcane Weapon requires ammunition and you are out of ammunition, then mundane ammunition is magically created as needed. If your Arcane Weapon has the Thrown property, then it magically returns to your hand after you throw it.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS" />
+      <select type="Proficiency" name="Skill Proficiency (Eldritch Readiness)" id="ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_STEALTH" />
+    </rules>
+  </element>
+  <element name="Elemental Arrow" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELDRITCH_SNIPER_ELEMENTAL_ARROW">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELDRITCH_SNIPER_ELEMENTAL_ARROW</requirements>
+    <description>
+      <p>When you reach 7th level, you can enchant your arrows with deadly elemental magic. When you hit a creature with a ranged weapon attack, you can inflict elemental magic against the creature. You can choose from one of the following effects:</p>
+      <ul>
+        <li><b>Acidic Arrow:</b> The creature takes 2d8 acid damage and acid hinders their vision. The target must succeed on a Constitution saving throw against your swordmage spell save DC or be blinded until the end of your next turn.</li>
+        <li><b>Explosive Arrow:</b> The creature takes 2d8 fire damage and the arrow explodes in flames. The target and all creatures within 20 feet of the target must make on a Dexterity saving throw against your swordmage spell save DC or take 2d8 fire damage on a failure, and half as much on a success.</li>
+        <li><b>Acidic Arrow:</b> The creature takes 2d8 cold damage and frost begins to freeze their body. The target must succeed on a Constitution saving throw against your swordmage spell save DC or be restrained until the end of your next turn.</li>
+        <li><b>Acidic Arrow:</b> Your arrow streaks like a bolt of lightning before emitting a loud thunderclap. The creature takes 2d8 lightning damage and must succeed on a Strength saving throw against your swordmage spell save DC or be knocked prone.</li>
+      </ul>
+      <p class="indent">Starting at 15th level of this class, the damage increases to 4d8 for each arrow. Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+    </description>
+    <sheet usage="1/Short Rest">
+      <description>When you hit a creature with a ranged weapon attack, you can inflict elemental magic against the creature. You can choose from one of the following effects: <br /><b>Acidic:</b> {{elemental arrow:dice}}d8 acid damage, target makes DC {{swordmage:spellcasting:dc}} CON save or blinded until the end of your next turn.<br /><b>Explosive:</b> {{elemental arrow:dice}}d8 fire damage, target and all creatures within 20 feet make DC {{swordmage:spellcasting:dc}} DEX save or take {{elemental arrow:dice}}d8 fire damage, and half as much on a sucess.<br /><b>Frost:</b> {{elemental arrow:dice}}d8 acid damage, target makes DC {{swordmage:spellcasting:dc}} CON save or restrained until the end of your next turn.<br /><b>Storm:</b> {{elemental arrow:dice}}d8 lightning damage, target makes DC {{swordmage:spellcasting:dc}} STR save or knocked prone.</description>
+    </sheet>
+    <rules>
+      <stat name="elemental arrow:dice" value="2" />
+      <stat name="elemental arrow:dice" value="2" level="15" />
+    </rules>
+  </element>
+  <element name="Sniper's Scout" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELDRITCH_SNIPER_SNIPERS_SCOUT">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELDRITCH_SNIPER_SNIPERS_SCOUT</requirements>
+    <description>
+      <p>At 11th level, you can use a piece of ammunition as a scrying point. As a bonus action, you can create an invisible sensor within 10 feet of a piece of ammunition or a weapon if it can be thrown. As an action, you can see and hear through the sensor as if you were there. During this time, you are deafened and blinded. The sensor moves with the ammunition, remaining within 10 feet of it. A creature that can see invisible objects sees the sensor as a luminous orb about the size of your fist.</p>
+      <p class="indent">You can sustain this effect for up to 10 minutes, and you can end it at any time (requires no action). The effect ends early if the ammunition is destroyed or if you use this feature on another piece of ammunition.</p>
+    </description>
+    <sheet action="Bonus Action">
+      <description>You create an invisible sensor within 10 feet of a piece of ammunition or a weapon (thrown) for 10 minutes. As an action, you can see and hear through the sensor as if you were there. The sensor stays within 10 feet of the ammunition. A creature that can see invisible objects sees the sensor as a luminous orb about the size of your fist.</description>
+    </sheet>
+  </element>
+  <element name="Revealing Shot" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELDRITCH_SNIPER_REVEALING_SHOT">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELDRITCH_SNIPER_REVEALING_SHOT</requirements>
+    <description>
+      <p>Starting at 15th level, as a bonus action or as part of your bonus action to activate your Aegis, you can rapidly fire a bright beacon to an unoccupied space within 120 feet of you to illuminate enemies. Each object within a 20-foot radius of the space is outlined in light. Any creature of your choice within the area must succeed on a Dexterity saving throw against your swordmage spell save DC or also be outlined in light. For 1 minute, objects and affected creatures shed dim light in a 10-foot radius.</p>
+      <p class="indent">Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being invisible. If you hit an affected creature while you are under the effects of your Aegis, then the bonus damage from your Aegis increases to 3d6.</p>
+      <p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+    </description>
+    <sheet action="Bonus Action (Aegis)" usage="1/Long Rest">
+      <description>You fire a bright beacon to an unoccupied space within 120 feet of you to illuminate enemies. Each object within a 20-foot radius of the space is outlined in light. Any creature of your choice within the area must succeed on a DC {{swordmage:spellcasting:dc}} Dexterity saving throw or also be outlined in light. For 1 minute, objects and affected creatures shed dim light in a 10-foot radius. Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being invisible. If you hit an affected creature while you are under the effects of your Aegis, then the bonus damage from your Aegis increases to 3d6.</description>
+    </sheet>
+  </element>
+  <element name="Death Arrow" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELDRITCH_SNIPER_DEATH_ARROW">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELDRITCH_SNIPER_DEATH_ARROW</requirements>
+    <description>
+      <p>At 20th level, when you hit a creature with a ranged weapon attack, you can infuse the attack with deadly necromancy. The target must make a Constitution saving throw against your spell save DC. On a failure, the target takes 8d10 necrotic damage and half as much on a success. Additionally, if this attack reduces the target to 50 hit points or fewer, the target dies.</p>
+      <p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
+    </description>
+    <sheet usage="1/Long Rest">
+      <description>When you hit a creature with a ranged weapon attack the target must make a DC {{swordmage:spellcasting:dc}} Constitution saving throw. On a failure, the target takes 8d10 necrotic damage and half as much on a success. Additionally, if this attack reduces the target to 50 hit points or fewer, the target dies.</description>
+    </sheet>
+  </element>
+
+  <element name="Aegis Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELDRITCH_SNIPER_AEGIS" />
+  <element name="Aegis Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELDRITCH_SNIPER_AEGIS_SPELLS" />
+  <element name="Eldritch Readiness Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELDRITCH_SNIPER_ELDRITCH_READINESS" />
+  <element name="Elemental Arrow Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELDRITCH_SNIPER_ELEMENTAL_ARROW" />
+  <element name="Sniper's Scout Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELDRITCH_SNIPER_SNIPERS_SCOUT" />
+  <element name="Revealing Shot Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELDRITCH_SNIPER_REVEALING_SHOT" />
+  <element name="Death Arrow Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELDRITCH_SNIPER_DEATH_ARROW" />
+
+</elements>

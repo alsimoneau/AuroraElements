@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="10.1.1">
+      <file name="swordmage-elementalist.xml" url="https://raw.githubusercontent.com/alsimoneau/AuroraElements/main/AdditionalContent/FanaticalDM/Class-Swordmage/archetypes/swordmage-elementalist.xml" />
+		</update>
+	</info>
+
+	<element name="Elementalist" type="Archetype" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_SWORDMAGE_ELEMENTALIST">
+		<supports>Swordmage Tradition</supports>
+		<description>
+			<p>Elementalist are swordmages that specialize in magic originating from the elemental planes. By binding the primal power of the planes to themselves, these swordmages become mortal embodiments of the elements. They might show minor physical manifestations of this power such as earthen skin, an ozone smell, or damp hair.</p>
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_AEGIS" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_ELEMENTAL_ATTUENEMENT" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_ELEMENTAL_STUDIES" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_PLANAR_AFFINITY" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_GREATER_PLANAR_AFFINITY" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_PLANAR_CONVERGENCE" />
+      <div element="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_ELEMENTAL_AVATAR" />
+		</description>
+		<sheet display="false">
+			<description>Elementalist are swordmages that specialize in magic originating from the elemental planes. By binding the primal power of the planes to themselves, these swordmages become mortal embodiments of the elements. They might show minor physical manifestations of this power such as earthen skin, an ozone smell, or damp hair.</description>
+		</sheet>
+		<rules>
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_AEGIS" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_ELEMENTAL_ATTUENEMENT" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_ELEMENTAL_STUDIES" level="3" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_PLANAR_AFFINITY" level="7" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_GREATER_PLANAR_AFFINITY" level="11" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_PLANAR_CONVERGENCE" level="15" />
+      <grant type="Archetype Feature" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_ELEMENTAL_AVATAR" level="20" />
+		</rules>
+	</element>
+
+  <element name="Aegis" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_AEGIS">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELEMENTALIST_AEGIS</requirements>
+    <description>
+      <p>When you take this archetype at 3rd level, you gain the following Aegis option:</p>
+      <p class="indent"><b>Aegis of Elements.</b> As a bonus action you can activate this Aegis to empower your blade with elemental fury. Your melee weapon attacks deal an additional 1d6 damage. The damage type is determined by your Elemental Attunement.</p>
+      <p class="indent">At 15th level of this class, the additional damage increases to 1d8. Your Aegis Blade lasts for 1 minute, ending early if you fall unconscious or die.</p>
+    </description>
+    <sheet alt="Aegis of Elements" action="Bonus Action" usage="1/Short Rest">
+      <description>As a bonus action you can activate this Aegis to empower your blade with elemental fury. Your melee weapon attacks deal an additional 1d{{aegis:dice}} damage of the type of your Elemental Attunement. Your Aegis Blade lasts for 1 minute, ending early if you fall unconscious or die.</description>
+    </sheet>
+    <rules>
+      <stat name="aegis:dice" value="6" />
+      <stat name="aegis:dice" value="2" level="15"/>
+    </rules>
+  </element>
+  <element name="Elemental Attunement" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_ELEMENTAL_ATTUENEMENT">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELEMENTALIST_ELEMENTAL_ATTUENEMENT</requirements>
+    <description>
+      <p>Choose one of the four great elemental planes: air, earth, fire, or water. This element becomes your Elemental Attunement. For each Elemental Attunement, you gain an associated damage type, learn a cantrip, and gain aegis spells as seen on the Elemental Attunement Table.</p>
+      <p class="indent">You can change your Elemental Attunement whenever you gain a level in this class. When you change your Elemental Attunement, you replace the benefits gained from your previous attunement to the benefits gained by your new attunement.</p>
+      <h5 class="caption">ELEMENTALIST SPELLS</h5>
+      <table>
+        <thead>
+          <tr><td>Swordmage Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>3st</td><td>1st level elementalist spell</td></tr>
+        <tr><td>5rd</td><td>2nd level elementalist spell</td></tr>
+        <tr><td>9th</td><td>3rd level elementalist spell</td></tr>
+        <tr><td>13th</td><td>4th level elementalist spell</td></tr>
+        <tr><td>17th</td><td>5th level elementalist spell</td></tr>
+      </table>
+      <h5 class="caption">ELEMENTAL ATTUNEMENT TABLE</h5>
+			<table>
+				<thead>
+					<tr><td class="left">Attumenent Benefit</td><td>Air Attunement</td><td>Earth Attunement</td><td>Fire Attunement</td><td>Water Attunement</td></tr>
+				</thead>
+        <tr><td class="left">Cantrip Learned</td><td><em>gust</em></td><td><em>mold earth</em></td><td><em>control flames</em></td><td><em>shape water</em></td></tr>
+        <tr><td class="left">Damage Type</td><td>lightning</td><td>damage type of your Arcane Weapon</td><td>fire</td><td>cold</td></tr>
+				<tr><td class="left">1st level elementalist spell</td><td><em>zephyr strike</em></td><td><em>earth tremor</em></td><td><em>searing smite</em></td><td><em>armor of agathys</em></td></tr>
+				<tr><td class="left">2nd level elementalist spell</td><td><em>warding wind</em></td><td><em>maximilian's earthen grasp</em></td><td><em>scorching ray</em></td><td><em>snilloc's snowball swarm</em></td></tr>
+				<tr><td class="left">3rd level elementalist spell</td><td><em>lightning bolt</em></td><td><em>erupting earth</em></td><td><em>fireball</em></td><td><em>tidal wave</em></td></tr>
+				<tr><td class="left">4th level elementalist spell</td><td><em>storm sphere</em></td><td><em>quaking swordburst</em></td><td><em>wall of fire</em></td><td><em>watery sphere</em></td></tr>
+				<tr><td class="left">5th level elementalist spell</td><td><em>control winds</em></td><td><em>transmute rock</em></td><td><em>immolation</em></td><td><em>maelstrom</em></td></tr>
+			</table>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Archetype Feature" name="Elemental Attunement" supports="Elemental Attunement" />
+      <grant type="Spell" id="ID_PHB_SPELL_HAIL_OF_THORNS" level="3" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_PHB_SPELL_MELFS_ACID_ARROW" level="5" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_PHB_SPELL_CONJURE_BARRAGE" level="9" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_PHB_SPELL_ARCANE_EYE" level="13" spellcasting="Swordmage" />
+      <grant type="Spell" id="ID_PHB_SPELL_CONJURE_VOLLEY" level="17" spellcasting="Swordmage" />
+    </rules>
+  </element>
+  <element name="Air" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_ELEMENTAL_ATTUNEMENT_AIR">
+    <supports>Elemental Attunement</supports>
+    <compendium display="false" />
+    <description>
+      <p>You gain the <em>gust</em> cantrip and your elemental damage type is lightning. You also gain the folowing spells:</p>
+      <h5 class="caption">ELEMENTALIST SPELLS</h5>
+      <table>
+        <thead>
+          <tr><td>Swordmage Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>3st</td><td><em>zephyr strike</em></td></tr>
+        <tr><td>5rd</td><td><em>warding wind</em></td></tr>
+        <tr><td>9th</td><td><em>lightning bolt</em></td></tr>
+        <tr><td>13th</td><td><em>storm sphere</em></td></tr>
+        <tr><td>17th</td><td><em>control winds</em></td></tr>
+      </table>
+    </description>
+    <sheet alt="Elemental Attunement: Air">
+      <description>Elemental attunement to the air element. Can be changed whenever you gain a level in this class.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_XGTE_SPELL_GUST" />
+      <grant type="Spell" id="ID_XGTE_SPELL_ZEPHYR_STRIKE" level="3" />
+      <grant type="Spell" id="ID_XGTE_SPELL_WARDING_WIND" level="5" />
+      <grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" level="9" />
+      <grant type="Spell" id="ID_XGTE_SPELL_STORM_SPHERE" level="13" />
+      <grant type="Spell" id="ID_XGTE_SPELL_CONTROL_WINDS" level="17" />
+    </rules>
+  </element>
+  <element name="Earth" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_ELEMENTAL_ATTUNEMENT_EARTH">
+    <supports>Elemental Attunement</supports>
+    <compendium display="false" />
+    <description>
+      <p>You gain the <em>mold earth</em> cantrip and your elemental damage type is the same as your Arcane Weapon. You also gain the folowing spells:</p>
+      <h5 class="caption">ELEMENTALIST SPELLS</h5>
+      <table>
+        <thead>
+          <tr><td>Swordmage Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>3st</td><td><em>earth tremor</em></td></tr>
+        <tr><td>5rd</td><td><em>maximilian's earthen grasp</em></td></tr>
+        <tr><td>9th</td><td><em>erupting earth</em></td></tr>
+        <tr><td>13th</td><td><em>quaking swordbust</em></td></tr>
+        <tr><td>17th</td><td><em>transmute rock</em></td></tr>
+      </table>
+    </description>
+    <sheet alt="Elemental Attunement: Earth">
+      <description>Elemental attunement to the earth element. Can be changed whenever you gain a level in this class.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_XGTE_SPELL_MOLD_EARTH" />
+      <grant type="Spell" id="ID_XGTE_SPELL_EARTH_TREMOR" level="3" />
+      <grant type="Spell" id="ID_XGTE_SPELL_MAXIMILIANS_EARTHEN_GRASP" level="5" />
+      <grant type="Spell" id="ID_XGTE_SPELL_ERUPTING_EARTH" level="9" />
+      <grant type="Spell" id="ID_FSM_SPELL_QUAKING_SWORDBURST" level="13" />
+      <grant type="Spell" id="ID_XGTE_SPELL_TRANSMUTE_ROCK" level="17" />
+    </rules>
+  </element>
+  <element name="Fire" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_ELEMENTAL_ATTUNEMENT_FIRE">
+    <supports>Elemental Attunement</supports>
+    <compendium display="false" />
+    <description>
+      <p>You gain the <em>control flames</em> cantrip and your elemental damage type is fire. You also gain the folowing spells:</p>
+      <h5 class="caption">ELEMENTALIST SPELLS</h5>
+      <table>
+        <thead>
+          <tr><td>Swordmage Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>3st</td><td><em>searing smite</em></td></tr>
+        <tr><td>5rd</td><td><em>scorching ray</em></td></tr>
+        <tr><td>9th</td><td><em>fireball</em></td></tr>
+        <tr><td>13th</td><td><em>wall of fire</em></td></tr>
+        <tr><td>17th</td><td><em>immolation</em></td></tr>
+      </table>
+    </description>
+    <sheet alt="Elemental Attunement: Fire">
+      <description>Elemental attunement to the fire element. Can be changed whenever you gain a level in this class.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_XGTE_SPELL_CONTROL_FLAMES" />
+      <grant type="Spell" id="ID_PHB_SPELL_SEARING_SMITE" level="3" />
+      <grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" level="5" />
+      <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="9" />
+      <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" level="13" />
+      <grant type="Spell" id="ID_XGTE_SPELL_IMMOLATION" level="17" />
+    </rules>
+  </element>
+  <element name="Water" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_ELEMENTAL_ATTUNEMENT_WATER">
+    <supports>Elemental Attunement</supports>
+    <compendium display="false" />
+    <description>
+      <p>You gain the <em>shape water</em> cantrip and your elemental damage type is cold. You also gain the folowing spells:</p>
+      <h5 class="caption">ELEMENTALIST SPELLS</h5>
+      <table>
+        <thead>
+          <tr><td>Swordmage Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>3st</td><td><em>armor of agathys</em></td></tr>
+        <tr><td>5rd</td><td><em>snilloc's snowball swarm</em></td></tr>
+        <tr><td>9th</td><td><em>tidal wave</em></td></tr>
+        <tr><td>13th</td><td><em>watery sphere</em></td></tr>
+        <tr><td>17th</td><td><em>maelstrom</em></td></tr>
+      </table>
+    </description>
+    <sheet alt="Elemental Attunement: Water">
+      <description>Elemental attunement to the water element. Can be changed whenever you gain a level in this class.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_XGTE_SPELL_SHAPE_WATER" />
+      <grant type="Spell" id="ID_PHB_SPELL_ARMOR_OF_AGATHYS" level="3" />
+      <grant type="Spell" id="ID_XGTE_SPELL_SNILLOCS_SNOWBALL_SWARM" level="5" />
+      <grant type="Spell" id="ID_XGTE_SPELL_TIDAL_WAVE" level="9" />
+      <grant type="Spell" id="ID_XGTE_SPELL_WATERY_SPHERE" level="13" />
+      <grant type="Spell" id="ID_XGTE_SPELL_MAELSTROM" level="17" />
+    </rules>
+  </element>
+  <element name="Elemental Studies" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_ELEMENTAL_STUDIES">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELEMENTALIST_ELEMENTAL_STUDIES</requirements>
+    <description>
+      <p>Starting at 3rd level, you are an expert on the elemental planes. You can speak, read, and write Primordial. You have advantage on Intelligence checks to investigate and recall information about the elemental planes and the creatures that inhabit those planes.</p>
+    </description>
+    <sheet>
+      <description>You can speak, read, and write Primordial. You have advantage on Intelligence checks to investigate and recall information about the elemental planes and the creatures that inhabit those planes.</description>
+    </sheet>
+    <rules>
+      <grant type="Language" id="ID_LANGUAGE_PRIMORDIAL" />
+    </rules>
+  </element>
+  <element name="Planar Affinity" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_PLANAR_AFFINITY">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELEMENTALIST_PLANAR_AFFINITY</requirements>
+    <description>
+      <p>Starting at 7th level, you gain one of the following features. You can choose to gain the feature of the same type as your Elemental Attunement or a different one.</p>
+      <ul>
+        <li><b>Air:</b> Your speed increases by 10 feet and you gain proficiency in Dexterity saving throws.</li>
+        <li><b>Earth:</b> Your hit point maximum increases by a number equal to your swordmage level and increases by 1 again whenever you gain a level in this class. You gain proficiency in the Athletics skill if you don't already have it, and your proficiency bonus is doubled for any Strength (Athletics) check.</li>
+        <li><b>Fire:</b> You add your proficiency bonus to one damage roll of any spell that you cast that deals fire damage.</li>
+        <li><b>Water:</b> You gain a swim speed equal to your walking speed, can breathe underwater, and you gain darkvision out to a range of 120 feet. If you already have darkvision, its range increases by 30 feet.</li>
+      </ul>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Archetype Feature" name="Planar Affinity" supports="Planar Affinity" />
+    </rules>
+  </element>
+  <element name="Air" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_PLANAR_AFFINITY_AIR">
+    <supports>Planar Affinity</supports>
+    <compendium display="false" />
+    <description>
+      <p>Your speed increases by 10 feet and you gain proficiency in Dexterity saving throws.</p>
+    </description>
+    <sheet alt="Planar Affinity: Air">
+      <description>Your speed increases by 10 feet and you gain proficiency in Dexterity saving throws.</description>
+    </sheet>
+    <rules>
+      <stat name="speed" value="10" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+    </rules>
+  </element>
+  <element name="Earth" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_PLANAR_AFFINITY_EARTH">
+    <supports>Planar Affinity</supports>
+    <compendium display="false" />
+    <description>
+      <p>Your hit point maximum increases by a number equal to your swordmage level and increases by 1 again whenever you gain a level in this class. You gain proficiency in the Athletics skill if you don't already have it, and your proficiency bonus is doubled for any Strength (Athletics) check.</p>
+    </description>
+    <sheet alt="Planar Affinity: Earth">
+      <description>Your hit point maximum increases by {{level:swordmage}}. You gain proficiency in the Athletics skill if you don't already have it, and your proficiency bonus is doubled for any Strength (Athletics) check.</description>
+    </sheet>
+    <rules>
+      <stat name="hp" value="level:swordmage" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+      <grant type="Proficiency" id="ID_EXPERTISE_SKILL_ATHLETICS" />
+    </rules>
+  </element>
+  <element name="Fire" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_PLANAR_AFFINITY_FIRE">
+    <supports>Planar Affinity</supports>
+    <compendium display="false" />
+    <description>
+      <p>You add your proficiency bonus to one damage roll of any spell that you cast that deals fire damage.</p>
+    </description>
+    <sheet alt="Planar Affinity: Fire">
+      <description>You add your proficiency bonus to one damage roll of any spell that you cast that deals fire damage.</description>
+    </sheet>
+  </element>
+  <element name="Water" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_PLANAR_AFFINITY_WATER">
+    <supports>Planar Affinity</supports>
+    <compendium display="false" />
+    <description>
+      <p>You gain a swim speed equal to your walking speed, can breathe underwater, and you gain darkvision out to a range of 120 feet. If you already have darkvision, its range increases by 30 feet.</p>
+    </description>
+    <sheet alt="Planar Affinity: Water">
+      <description>You gain a swim speed equal to your walking speed, can breathe underwater, and you gain darkvision out to a range of 120 feet. If you already have darkvision, its range increases by 30 feet.</description>
+    </sheet>
+    <rules>
+      <stat name="speed:swim" value="speed" bonus="swim" />
+      <grant type="Vision" id="ID_VISION_DARKVISION" />
+    </rules>
+  </element>
+  <element name="Greater Planar Affinity" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_GREATER_PLANAR_AFFINITY">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELEMENTALIST_GREATER_PLANAR_AFFINITY</requirements>
+    <description>
+      <p>At 11th level, your affinity to your chosen planar element grows stronger. You gain one of the following features. You can choose to gain the feature of the same type as your Elemental Attunement or a different one.</p>
+      <ul>
+        <li><b>Air:</b> You gain resistance to lightning and thunder damage, and you can dash as a bonus action.</li>
+        <li><b>Earth:</b> Moving through nonmagical difficult terrain costs you no extra movement, and you gain a burrow speed equal to your walking speed.</li>
+        <li><b>Fire:</b> You gain fire resistance. The damage from your Aegis and spells that you cast ignore fire resistance.</li>
+        <li><b>Water:</b> You gain resistance to cold damage. When you damage a creature with a spell that's not a cantrip, you can pull or push the creature up to 10 feet.</li>
+      </ul>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Archetype Feature" name="Greater Planar Affinity" supports="Greater Planar Affinity" />
+    </rules>
+  </element>
+  <element name="Air" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_GREATER_PLANAR_AFFINITY_AIR">
+    <supports>Greater Planar Affinity</supports>
+    <compendium display="false" />
+    <description>
+      <p>You gain resistance to lightning and thunder damage, and you can dash as a bonus action.</p>
+    </description>
+    <sheet alt="Greater Planar Affinity: Air">
+      <description>You gain resistance to lightning and thunder damage, and you can dash as a bonus action.</description>
+    </sheet>
+    <rules>
+      <stat name="speed" value="10" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+    </rules>
+  </element>
+  <element name="Earth" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_GREATER_PLANAR_AFFINITY_EARTH">
+    <supports>Greater Planar Affinity</supports>
+    <compendium display="false" />
+    <description>
+      <p>Moving through nonmagical difficult terrain costs you no extra movement, and you gain a burrow speed equal to your walking speed.</p>
+    </description>
+    <sheet alt="Greater Planar Affinity: Earth">
+      <description>Moving through nonmagical difficult terrain costs you no extra movement, and you gain a burrow speed equal to your walking speed.</description>
+    </sheet>
+    <rules>
+      <stat name="speed:burrow" value="speed" bonus="burrow" />
+    </rules>
+  </element>
+  <element name="Fire" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_GREATER_PLANAR_AFFINITY_FIRE">
+    <supports>Greater Planar Affinity</supports>
+    <compendium display="false" />
+    <description>
+      <p>You gain fire resistance. The damage from your Aegis and spells that you cast ignore fire resistance.</p>
+    </description>
+    <sheet alt="Greater Planar Affinity: Fire">
+      <description>You gain fire resistance. The damage from your Aegis and spells that you cast ignore fire resistance.</description>
+    </sheet>
+  </element>
+  <element name="Water" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_GREATER_PLANAR_AFFINITY_WATER">
+    <supports>Greater Planar Affinity</supports>
+    <compendium display="false" />
+    <description>
+      <p>You gain resistance to cold damage. When you damage a creature with a spell that's not a cantrip, you can pull or push the creature up to 10 feet.</p>
+    </description>
+    <sheet alt="Greater Planar Affinity: Water">
+      <description>You gain resistance to cold damage. When you damage a creature with a spell that's not a cantrip, you can pull or push the creature up to 10 feet.</description>
+    </sheet>
+  </element>
+  <element name="Planar Convergence" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_PLANAR_CONVERGENCE">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELEMENTALIST_PLANAR_CONVERGENCE</requirements>
+    <description>
+      <p>When you reach 15th level, when you activate your aegis, planar energy converges on you. You gain one of the following features. You can choose to gain the feature of the same type as your Elemental Attunement or a different one.</p>
+      <ul>
+        <li><b>Air:</b> While your Aegis is active, and when you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</li>
+        <li><b>Earth:</b> When you activate your Aegis, you gain the toughness of mountains. You gain temporary hit points equal to your Swordmage level plus your Intelligence modifier (a minimum of 1).</li>
+        <li><b>Fire:</b> While your Aegis is active, and when you make a weapon attack from Blade Magic, the attack deals additional fire damage equal to 1d8 per level of the spell cast.</li>
+        <li><b>Water:</b> While your Aegis is active, when you hit a creature of a large or smaller size with a melee weapon attack or damage them with a spell from the Water Attunement Aegis Spells, they must succeed on a Strength saving throw against your swordmage spell save DC or be knocked prone.</li>
+      </ul>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Archetype Feature" name="Planar Convergence" supports="Planar Convergence" />
+    </rules>
+  </element>
+  <element name="Air" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_PLANAR_CONVERGENCE_AIR">
+    <supports>Planar Convergence</supports>
+    <compendium display="false" />
+    <description>
+      <p>While your Aegis is active, and when you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+    </description>
+    <sheet alt="Planar Convergence: Air">
+      <description>While your Aegis is active, and when you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
+    </sheet>
+    <rules>
+      <stat name="speed" value="10" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+    </rules>
+  </element>
+  <element name="Earth" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_PLANAR_CONVERGENCE_EARTH">
+    <supports>Planar Convergence</supports>
+    <compendium display="false" />
+    <description>
+      <p>When you activate your Aegis, you gain the toughness of mountains. You gain temporary hit points equal to your Swordmage level plus your Intelligence modifier (a minimum of 1).</p>
+    </description>
+    <sheet alt="Planar Convergence: Earth">
+      <description>When you activate your Aegis, you gain {{planar convergence:temp hp}} temporary hit points.</description>
+    </sheet>
+    <rules>
+      <stat name="planar convergence:temp hp" value="level:swordmage" />
+      <stat name="planar convergence:temp hp" value="1" bonus="bonus" />
+      <stat name="planar convergence:temp hp" value="intelligence:modifier" bonus="bonus" />
+    </rules>
+  </element>
+  <element name="Fire" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_PLANAR_CONVERGENCE_FIRE">
+    <supports>Planar Convergence</supports>
+    <compendium display="false" />
+    <description>
+      <p>While your Aegis is active, and when you make a weapon attack from Blade Magic, the attack deals additional fire damage equal to 1d8 per level of the spell cast.</p>
+    </description>
+    <sheet alt="Planar Convergence: Fire">
+      <description>While your Aegis is active, and when you make a weapon attack from Blade Magic, the attack deals additional fire damage equal to 1d8 per level of the spell cast.</description>
+    </sheet>
+  </element>
+  <element name="Water" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_PLANAR_CONVERGENCE_WATER">
+    <supports>Planar Convergence</supports>
+    <compendium display="false" />
+    <description>
+      <p>While your Aegis is active, when you hit a creature of a large or smaller size with a melee weapon attack or damage them with a spell from the Water Attunement Aegis Spells, they must succeed on a Strength saving throw against your swordmage spell save DC or be knocked prone.</p>
+    </description>
+    <sheet alt="Planar Convergence: Water">
+      <description>While your Aegis is active, when you hit a creature of a large or smaller size with a melee weapon attack or damage them with a spell from the Water Attunement Aegis Spells, they must succeed on a DC {{swordmage:spellcasting:dc}} Strength saving throw or be knocked prone.</description>
+    </sheet>
+  </element>
+  <element name="Elemental Avatar" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_ELEMENTAL_AVATAR">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELEMENTALIST_ELEMENTAL_AVATAR</requirements>
+    <description>
+      <p>At 20th level, you can temporarily transform into an avatar of your chosen element. As a bonus action or as part of your bonus action to activate your Aegis, you can also activate your Elemental Avatar, which lasts for 1 minute or until you fall unconscious. Once you use this feature, you can't use it again until after a long rest. You gain one of the following Elemental Avatars. You can choose to gain the feature of the same type as your Elemental Attunement or a different one.</p>
+      <ul>
+        <li><b>Air Avatar:</b> You become a living storm. You gain a fly speed of 60 feet. As a bonus action, you can shoot a bolt of lightning at a creature within 60 feet of you. Make a ranged spell attack roll against the creature. On a hit, the target takes 4d10 lightning damage and you can teleport to an unoccupied space adjacent to them.</li>
+        <li><b>Earth Avatar:</b> Your skin hardens to stone. You gain resistance to bludgeoning, piercing, and slashing damage. When you hit a creature with a melee weapon attack, they must succeed a Strength saving throw against your swordmage spell save DC or become restrained until the end of your next turn as they are encased in stone.</li>
+        <li><b>Fire Avatar:</b> Your form becomes writhing flames. You gain immunity to fire damage. You also create an aura of flames around you in a 15-foot radius. Any creature of your choice that enters the aura for the first time or starts their turn in your aura takes 4d8 fire damage.</li>
+        <li><b>Water Avatar:</b> You assume a watery form that is difficult to pin down. You are under the effects of the freedom of movement spell. When you take damage, you can use your reaction to reduce the damage by 4d8 and teleport 30 feet to an unoccupied space that you can see.</li>
+      </ul>
+    </description>
+    <sheet action="Bonus Action (Aegis)" usage="1/Long Rest">
+      <description>You activate your Elemental Avatar, which lasts for 1 minute or until you fall unconscious.</description>
+    </sheet>
+    <rules>
+      <select type="Archetype Feature" name="Elemental Avatar" supports="Elemental Avatar" />
+    </rules>
+  </element>
+  <element name="Air Avatar" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALISTELEMENTAL_AVATAR_E_AIR">
+    <supports>Elemental Avatar</supports>
+    <compendium display="false" />
+    <description>
+      <p>You become a living storm. You gain a fly speed of 60 feet. As a bonus action, you can shoot a bolt of lightning at a creature within 60 feet of you. Make a ranged spell attack roll against the creature. On a hit, the target takes 4d10 lightning damage and you can teleport to an unoccupied space adjacent to them.</p>
+    </description>
+    <sheet alt="Air Avatar">
+      <description>You become a living storm. You gain a fly speed of 60 feet. As a bonus action, you can shoot a bolt of lightning at a creature within 60 feet of you. Make a ranged spell attack roll against the creature. On a hit, the target takes 4d10 lightning damage and you can teleport to an unoccupied space adjacent to them.</description>
+    </sheet>
+  </element>
+  <element name="Earth Avatar" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_PELEMENTAL_AVATAR_EARTH">
+    <supports>Elemental Avatar</supports>
+    <compendium display="false" />
+    <description>
+      <p>Your skin hardens to stone. You gain resistance to bludgeoning, piercing, and slashing damage. When you hit a creature with a melee weapon attack, they must succeed a Strength saving throw against your swordmage spell save DC or become restrained until the end of your next turn as they are encased in stone.</p>
+    </description>
+    <sheet alt="Earth Avatar">
+      <description>Your skin hardens to stone. You gain resistance to bludgeoning, piercing, and slashing damage. When you hit a creature with a melee weapon attack, they must succeed a DC {{swordmage:spellcasting:dc}} Strength saving throw or become restrained until the end of your next turn as they are encased in stone.</description>
+    </sheet>
+  </element>
+  <element name="Fire Avatar" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_ELEMENTAL_AVATAR__FIRE">
+    <supports>Elemental Avatar</supports>
+    <compendium display="false" />
+    <description>
+      <p>Your form becomes writhing flames. You gain immunity to fire damage. You also create an aura of flames around you in a 15-foot radius. Any creature of your choice that enters the aura for the first time or starts their turn in your aura takes 4d8 fire damage.</p>
+    </description>
+    <sheet alt="Fire Avatar">
+      <description>Your form becomes writhing flames. You gain immunity to fire damage. You also create an aura of flames around you in a 15-foot radius. Any creature of your choice that enters the aura for the first time or starts their turn in your aura takes 4d8 fire damage.</description>
+    </sheet>
+  </element>
+  <element name="Water Avatar" type="Archetype Feature" source="Fanatical's Swordmage" id="ID_FSM_ARCHETYPE_FEATURE_SWORDMAGE_ELEMENTALIST_PELEMENTAL_AVATAR_WATER">
+    <supports>Elemental Avatar</supports>
+    <compendium display="false" />
+    <description>
+      <p>You assume a watery form that is difficult to pin down. You are under the effects of the freedom of movement spell. When you take damage, you can use your reaction to reduce the damage by 4d8 and teleport 30 feet to an unoccupied space that you can see.</p>
+    </description>
+    <sheet alt="Water Avatar">
+      <description>You assume a watery form that is difficult to pin down. You are under the effects of the freedom of movement spell. When you take damage, you can use your reaction to reduce the damage by 4d8 and teleport 30 feet to an unoccupied space that you can see.</description>
+    </sheet>
+  </element>
+
+  <element name="Aegis Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELEMENTALIST_AEGIS" />
+  <element name="Elemental Attunement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELEMENTALIST_ELEMENTAL_ATTUENEMENT" />
+  <element name="Elemental Studies Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELEMENTALIST_ELEMENTAL_STUDIES" />
+  <element name="Planar Affinity Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELEMENTALIST_PLANAR_AFFINITY" />
+  <element name="Greater Planar Affinity Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELEMENTALIST_GREATER_PLANAR_AFFINITY" />
+  <element name="Planar Convergence Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELEMENTALIST_PLANAR_CONVERGENCE" />
+  <element name="Elemental Avatar Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SWORDMAGE_ELEMENTALIST_ELEMENTAL_AVATAR" />
+
+</elements>
